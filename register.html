@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+  <link rel='icon' href='imgs/mf.icon'>
+  <link rel="stylesheet" href="css/reset-min.css" type='text/css'>
+  <link rel="stylesheet" href="css/register.css" type='text/css'>
+ </head>
+
+ <body>
+   <div class='logo'><a href="index.html"></a></div>
+   <div class='login' id='register_box'>
+     <div class='login_container'>
+	   <form action="" id='register_form'>
+	     <div class='register_error' id='uname_error'></div>
+	     <input type="text" name='uname' placeholder='您的邮箱、手机号'>
+		 <div class='register_error' id='upwd_error'></div>
+	     <input type="password" name='upwd' placeholder='请输入6~12位字母、数字或下划线组合'>
+	     <div class='register_error' id='supwd_error'></div>
+		 <input type="password" name='supwd' placeholder='请再次输入密码'>
+		 <div class='register_error' id='text_error'></div>
+		 <div class='valid'>
+		   <span>验证码</span><input type="text" name='text'>
+		   <svg id='Rtext' width='100' height='30'></svg>
+		   <a href="" id='changeNext'>看不清</a>
+		 </div>
+	     <button type='button' id='bt_register'>立即注册</button>
+		 <p>注册视为同意<a href="" class='protocal'>《蚂蜂窝用户使用协议》</a></p>
+	   </form>
+	   <div class='cooperation'>
+	     <p>用合作网站账户直接登录</p>
+		 <ul>
+		 	<li><a href="" class='weibo'><i></i>新浪微博</a></li>
+		 	<li><a href="" class='qq'><i></i>QQ</a></li>
+		 	<li><a href="" class='weixin'><i></i>微信</a></li>
+		 	<li><a href="" class='renren'><i></i>人人网</a></li>
+		 </ul>
+	   </div>
+	 </div>
+	 <p class='zhuce'>已经注册？<a href="#login_box" id='rn_login'>马上登录</a></p>
+   </div>
+   <div class='login' id='login_box'>
+     <div class='login_container'>
+	   <div class='login_error' id='login_error'></div>
+	   <form action="" id='login_form'>
+	     <input type="text" name='uname' placeholder='您的邮箱、手机号'>
+	     <input type="password" name='upwd' placeholder='您的密码'>
+	     <p><a href="">忘记密码</a></p>
+	     <button type='button' id='bt_login'>登 录</button>
+	   </form>
+	   <div class='cooperation'>
+	     <p>用合作网站账户直接登录</p>
+		 <ul>
+		 	<li><a href="" class='weibo'><i></i>新浪微博</a></li>
+		 	<li><a href="" class='qq'><i></i>QQ</a></li>
+		 	<li><a href="" class='weixin'><i></i>微信</a></li>
+		 	<li><a href="" class='renren'><i></i>人人网</a></li>
+		 </ul>
+	   </div>
+	 </div>
+	 <p class='zhuce'>还没有账号？<a href="#register_box" id='rn_register'>马上注册</a></p>
+   </div>
+   <div class='waiting' id='waiting'>
+     <div class='circle'></div>
+   </div>
+   <script src='js/jquery-1.11.3.js'></script>
+   <script src='js/register.js'></script>
+ </body>
+</html>

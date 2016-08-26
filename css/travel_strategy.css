@@ -1,0 +1,356 @@
+/**通用样式**/
+body{
+  font-size:'12px';
+  color:#666;
+}
+h1,h2,h3,h4,h5{
+  font-weight:normal;
+}
+img{
+  vertical-align:middle;
+}
+a{
+  text-decoration:none;
+  color:#666;
+}
+a:hover{
+  color:#ff9d00;
+}
+.index_header header .index_header_c>li:first-child a{
+  background-color:#fff;
+  color:#666;
+}
+.index_header header .index_header_c>li:nth-child(3)>a{
+  background-color:#FF9D00;
+  color:#fff;
+}
+.index_header{
+  border-bottom:2px solid #eee;
+  margin-bottom:15px;
+}
+/**顶部左侧的菜单**/
+.top_container,.navigation,section{
+  width:1000px;
+  margin:0 auto 30px;
+  box-sizing:border-box;
+  font-family:'microsoft yahei';
+}
+.top_container .lt{
+  width:260px;
+  float:left;
+}
+ul.nav_item{
+  position:relative;/**二级菜单相对于ul做绝对定位**/
+}
+ul.nav_item>li{
+  box-sizing:content-box;
+  width:238px;
+  padding:0 10px;
+  height:40px;
+  line-height:40px;
+  border:1px solid #ccc;
+  border-top:none;
+  text-align:right;
+  background-color:#fff;
+}
+ul.nav_item>li:hover{
+  border-right:1px solid #fff;
+  color:#ff9d00;
+}
+ul.nav_item>li:hover .nav_panel{
+  display:block;
+}
+ul.nav_item>li:first-child{
+  border-top:1px solid #ccc;
+}
+.nav_title h3{
+  font-size:14px;
+  padding-left:15px;
+  float:left;
+}
+.nav_title i{
+  display:inline-block;
+  width:5px;
+  height:9px;
+  background:url(../imgs/travel_strategy/travel_arrow.gif) no-repeat 
+}
+ul.nav_item>li:hover .nav_title i{
+  background-position:-5px 0;
+}
+/**鼠标hover时显示二级菜单**/
+/*nav_panel的背景图*/
+.nav_item>li:first-child .nav_panel{
+  background:url(../imgs/travel_strategy/nav_bg1.jpg) no-repeat;
+}
+.nav_item>li:nth-child(2) .nav_panel{
+  background:url(../imgs/travel_strategy/nav_bg2.jpg) no-repeat;
+}
+.nav_item>li:nth-child(3) .nav_panel{
+  background:url(../imgs/travel_strategy/nav_bg3.jpg) no-repeat;
+}
+.nav_panel{
+  width:480px;
+  padding:15px 0 15px 30px;
+  position:absolute;
+  top:0;
+  left:260px;
+  text-align:left;
+  color:#aaa;
+  display:none;
+  background-color:#fff;
+  z-index:100;
+}
+.nav_panel>li{
+  height:30px;
+  line-height:30px;
+}
+.nav_panel>li a{
+  color:#999;
+}
+.nav_panel>li a:hover{
+  color:#ff9d00;
+  text-decoration:underline;
+}
+.nav_panel i{
+  font-size:20px;
+  display:inline-block;
+  width:25px;
+  text-align:right;
+}
+.nav_panel i.rank_num,.nav_panel i.rank_num+strong a{
+  color:#ff9d00;
+}
+.nav_panel strong{
+  padding:0 15px;
+  font-size:14px;
+}
+.nav_theme{
+  border:1px solid #eee;
+}
+.nav_theme>li{
+  height:50px;
+}
+.nav_theme>li h4{
+  float:left;
+  width:60px;
+  text-align:center;
+  font-weight:bold;
+  font-size:15px;
+}
+.nav_theme>li p{
+  margin-left:60px;
+  line-height:25px;
+}
+.nav_theme>li p a{
+  margin:0 5px;
+}
+/**搜索框**/
+p.search{
+  border:2px solid #ff9d00;
+  width:260px;
+  height:45px;
+  line-height:45px;
+  font-size:14px;
+  margin:15px 0 20px;
+}
+p.search i{
+  display:inline-block;
+  width:32px;
+  height:28px;
+  margin:0 8px 0;
+  vertical-align:-6px;
+  background:url(../imgs/travel_strategy/travel_icon.png) no-repeat 0px 0px;
+}
+p.search input{
+  border:none;
+  outline:none;
+}
+/**APP下载所在行**/
+.app{
+  padding-bottom:25px;
+  border-bottom:1px solid #eee;
+} 
+.app>a{
+  float:left;
+}
+.app p{
+  margin-left:85px;
+  line-height:25px;
+  padding-top:8px;
+}
+.app p a{
+  color:#ff9d00;
+  font-size:16px;
+}
+.app p span{
+  border-right:1px solid #eee;
+  margin:0 5px;
+}
+/**顶部 轮播广告**/
+.top_container .right{
+  margin-left:300px;
+  width:700px;
+  height:340px;
+  overflow:hidden;
+  position:relative;
+  z-index:10;
+}
+.arrow{
+  position:absolute;
+  top:45%;
+  left:5%;
+  display:block;
+  width:40px;
+  height:40px;
+  text-align:center;
+  line-height:40px;
+  border-radius:50%;
+  background-color:rgba(0,0,0,.3);
+  color:#fff;
+  font-size:36px;
+  font-weight:bold;
+  cursor:pointer;
+  z-index:30;
+}
+.arrow.left{
+  left:90%;
+}
+.arrow:hover{
+  background-color:rgba(0,0,0,.7); 
+  color:#fff;
+  text-decoration:none;
+}
+.slider{
+  height:340px;
+  width:4900px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.slider>li{
+  float:left;
+}
+.thumb_box>li{
+  float:left;
+  margin-right:15px;
+  width:20px;
+  height:20px;
+  cursor:pointer;
+  background:url(../imgs/travel_strategy/scroll_s.png) no-repeat center center;
+}
+.thumb_box>li.on{
+  background:url(../imgs/travel_strategy/scroll_b.png) no-repeat;
+}
+.thumb_box{
+  position:absolute;
+  bottom:25px;
+  right:30px;
+}
+/**全部旅游攻略导航**/
+.navigation h2 a{
+  color:#ff9d00;
+}
+.navigation ul{
+  margin:10px 0 30px;
+}
+.navigation ul>li{
+  border-bottom:1px solid #ccc;
+  padding:15px 0;
+}
+.navigation ul>li a:hover{
+  background-color:#ff9d00;
+  color:#fff;
+  text-decoration:none;
+}
+.navigation ul>li strong{
+  color:#333;
+  font-size:15px;
+  margin-right:15px;
+  font-weight:normal;
+}
+.navigation ul>li strong a:hover{
+  color:#ff9d00;
+  text-decoration:underline;
+  background-color:#fff;
+}
+.navigation ul>li>p{
+  display:inline-block;
+}
+.navigation ul>li>p a{
+  margin-left:6px;
+  padding:3px 5px;
+  font-size:13px;
+}
+.navigation ul>li span a{
+  float:right;
+  margin-right:50px;
+  padding:2px 5px;
+  color:#fff;
+  background-color:#aaa;
+}
+/**内容主体部分**/
+section .title:after,section .book_rank:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+section .title{
+  font-size:15px;
+  margin:10px 0 25px;
+}
+section .title .lt span{
+  margin:0 10px;
+  color:#ccc;
+}
+section .title .lt a{
+  padding-bottom:5px;
+  text-decoration:none;
+}
+section .title .lt a.active{
+  color:#ff9d00;
+  border-bottom:2px solid #ff9d00;
+}
+section .title .rt{
+  padding:6px 20px;
+  background-color:#eee;
+  border-radius:20px;
+  float:right;
+}
+section .title .rt a{
+  color:#ff9d00;
+}
+.book_rank{
+  width:1044px;
+}
+.book_rank>dl{
+  float:left;
+  width:130px;
+  margin:0 44px 25px 0;
+}
+.book_rank>dl>dd:nth-child(2){
+  text-align:center;
+  margin:8px 0;
+}
+.book_rank>dl>dd:last-child{
+  padding-left:30px;
+  background:#eee url(../imgs/travel_strategy/down_p.gif) no-repeat 0 center;
+  border-radius:15px;
+  height:30px;
+  line-height:30px;
+}
+.more{
+  text-align:center;
+  margin-top:20px;
+}
+.more>a{
+  padding:8px 25px;
+  color:#ff9d00;
+  border:1px solid #aaa;
+  border-radius:5px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.more>a:hover{
+  background-color:#ff9d00;
+  color:#fff;
+}

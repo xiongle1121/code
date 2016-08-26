@@ -1,0 +1,1036 @@
+body,a{
+  color:#666;
+  font-family:simsun;
+}
+figure{
+  padding:0;
+  margin:0;
+}
+.main_content{
+  width:1024px;
+  margin:0 auto;
+}
+.lt{
+  float:left;
+}
+.rt{
+  float:right;
+}
+/****顶部导航样式***/
+.index_header,.index_banner,.index_footer{
+  width:1211px;
+  margin:0 auto;
+}
+.index_header:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.index_header .index_header_c>li,.index_header .index_header_r>li{
+  float:left;
+}
+.index_header a{
+  color:#666;
+  text-decoration:none;
+  font-size:15px;
+}
+/**logo**/
+.index_header h1{
+  float:left;
+  margin:10px 0 10px 100px;
+}
+/**主导航**/
+.index_header .index_header_c{
+  float:left;
+  margin-left:50px;
+}
+.index_header .index_header_c>li>a{
+  float:left;
+  padding:22px 15px;
+  font-weight:bold;
+}
+.index_header .index_header_c>li{
+  position:relative;
+}
+.index_header .index_header_c>li.active a{
+  background-color:#FF9D00;
+  color:#fff;
+}
+.index_header .index_header_c>li>a:hover{
+  border-bottom:2px solid #FF9D00;
+  padding-bottom:20px;
+}
+/**自由行商城的样式**/
+.free_go>a:after{
+  content:'';
+  display:inline-block;
+  border:5px solid transparent;
+  border-top-color:#333;
+  margin-left:4px;
+}
+.index_header .index_header_c .free_go:hover>a{
+  border:1px solid #ccc;
+  padding:20px 14px 22px 14px;
+  border-bottom:none;
+  border-top:2px solid #FF9D00;
+  color:#ff9d00;
+}
+.free_go:hover .supermarket{
+  display:block;
+}
+.free_go:hover>a:after{
+  border-top-color:#ff9d00;
+}
+.supermarket{
+  position:absolute;
+  top:59px;
+  left:0;
+  padding:10px 0;
+  background-color:#fafafa;
+  z-index:200;
+  display:none;
+  box-sizing:content-box;
+}
+.supermarket>li>a{
+  float:left;
+  line-height:28px;
+  height:28px;
+  width:120px;
+  padding-left:18px;
+}
+.supermarket>li>a:hover{
+  background-color:#eee;
+}
+/**机票、酒店 当地游后的标签**/
+.s_hotel,.s_local{
+  display:inline-block;
+  height:15px;
+  line-height:15px;
+  color:#fff;
+  background:#f46240;
+  font-style:normal;
+  position:absolute;
+  margin:5px 0 0 14px;
+  padding:0 4px 0 5px;
+}
+.s_hotel:before,.s_local:before{
+  content:'';
+  display:inline-block;
+  position:absolute;
+  left:-16px;
+  top:0;
+  width:0;
+  height:0;
+  border:8px solid transparent;
+  border-right-color:#f46240;
+}
+.s_local{
+  background-color:#1ec896;
+}
+.s_local:before{
+  border-right-color:#1ec896;
+}
+/*打卡弹出框的样式*/
+.card_container{
+  position:fixed;
+  background-color:rgba(0,0,0,0.3);
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index:9999;
+  display:none;
+}
+/*连续打卡所在行样式*/
+.continue_card{
+  width:410px;
+  height:50px;
+  line-height:50px;
+  margin:50px auto 20px;
+}
+.continue_card p{
+  font-size:24px;
+  color:#fff;
+  margin:0 15px;
+  font-weight:bold;
+}
+.continue_card span{
+  font-size:40px;
+  color:#000;
+  padding:5px 8px;
+  margin-left:10px;
+  background-color:#fff;
+}
+.continue_card span:first-child{
+  margin-left:0;
+}
+.continue_card:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+/**打卡 每日任务 所在行**/
+.card_main{
+  width:880px;
+  margin:0 auto;
+  height:480px;
+  background-color:#333;
+  border-radius:6px;
+  position:relative;
+  box-sizing:border-box;
+}
+.card_main{
+  padding:10px;
+}
+.card_main .close{
+  background-color:rgba(0,0,0,0);
+}
+.card_main p.title a{
+  display:inline-block;
+  width:180px;
+  text-align:center;
+  height:40px;
+  line-height:40px;
+  border-radius:5px 5px 0 0;
+  font-size:20px;
+  background-color:#717171;
+  color:#A1A1A1;
+  text-decoration:none;
+}
+.card_main p.title a.card{
+  background-color:#FF9750;
+  color:#666;
+}
+.card_main p.title a.dayTask{
+  background-color:#fff;
+  color:#666;
+}
+/**打卡的div内容**/
+.card_content{
+  position:absolute;
+  top:50px;
+  left:0;
+  border-radius:0 6px 0 0;
+  background-color:#FF9750;
+  height:370px;
+  margin-left:10px;
+} 
+/*左边城市样式*/
+.city{
+  width:430px;
+  float:left;
+}
+.city_name{
+  text-align:center;
+  padding-top:30px;
+}
+.city_name img{
+  width:80px;
+}
+.city>div{
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+.city>div>img{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:400px;
+}
+.moon{
+  z-index:10;
+}
+.house{
+  z-index:30;
+}
+.tam{
+  z-index:50;
+}
+/*右边主题的样式*/
+.theme{
+  width:390px;
+  margin-left:430px;
+  padding:20px;
+}
+.theme>div{
+  position:relative;
+}
+.carve,.ad_bg{
+  position:absolute;
+}
+.ad_bg{
+  z-index:30;
+}
+.carve{
+  top:33px;
+  left:2px;
+  z-index:10;
+}
+/*底部公路所在行样式*/
+.card_bottom{
+  margin-top:-93px;
+  position:relative;
+  z-index:100;
+  text-align:center;
+}
+.card_bottom .content{
+  width:1200px;
+  position:absolute;
+  left:50%;
+  margin-left:-600px;
+}
+.road_green,.road_zebra{
+  height:40px;
+  background:url(../imgs/road-green.png) repeat-x 0 0;
+  -webkit-animation:change linear 8s infinite both;
+  -moz-animation:change linear 8s infinite both;
+}
+.road_zebra{
+  padding-bottom:50px;
+  background:#333 url(../imgs/road-zebra.png) repeat-x 0 0;
+  -webkit-animation:change linear 10s infinite both;
+  -moz-animation:change linear 10s infinite both;
+}
+@-webkit-keyframes change{
+  0%{
+	background-position:0 0;
+  }
+  100%{
+	background-position:-1000px 0;
+  }
+}
+@-moz-keyframes change{
+  0%{
+	background-position:0 0;
+  }
+  100%{
+	background-position:-1000px 0;
+  }
+}
+/*奔跑的汽车*/
+.car{
+  position:absolute;
+  width:350px;
+  top:-50px;
+  left:41%;
+}
+.car img{
+  position:absolute;
+  width:200px;
+}
+/*我的金币样式*/
+.money{
+  position:absolute;
+  width:140px;
+  height:40px;
+  top:45px;
+  left:25%;
+}
+.money i{
+  display:inline-block;
+  margin-right:10px;
+  vertical-align:-5px;
+  width:24px;
+  height:24px;
+  background:url(../imgs/index_cardsprite.png) no-repeat -140px -70px;
+  -webkit-animation:rotate 1s linear infinite;
+  -moz-animation:rotate 1s linear infinite;
+}
+@-webkit-keyframes rotate{
+  0%{
+	transform:rotateY(0deg);
+  }
+  50%{
+	transform:rotateY(90deg);
+  }
+  100%{
+	transform:rotateY(0deg);
+  }
+}
+@-moz-keyframes rotate{
+  0%{
+	transform:rotateY(0deg);
+  }
+  50%{
+	transform:rotateY(90deg);
+  }
+  100%{
+	transform:rotateY(0deg);
+  }
+}
+.money span{
+  font-size:16px;
+  color:#FF9750;
+}
+/*每日任务 内容样式*/
+.task{
+  background-color:#fff;
+  font-family:'microsoft yahei';
+  font-size:14px;
+  width:860px;
+  box-sizing:border-box;
+  border-radius:0 5px 5px 5px;
+  display:none;
+}
+.task>ul>li{
+  height:70px;
+  line-height:70px;
+  border-bottom:1px solid #E5E5E5;
+  padding-left:20px;
+}
+.t_title{
+  float:left;
+  width:45%;
+  font-size:18px;
+}
+.t_title i{
+  float:left;
+  width:60px;
+  height:53px;
+  margin:17px 8px 0 0; 
+  background:url(../imgs/index_cardsprite.png) no-repeat -87px -12px;
+}
+.task>ul>li:nth-child(2) .t_title i{
+  background-position:-248px -9px;
+}
+.task>ul>li:nth-child(3) .t_title i{
+  background-position:-322px -8px;
+}
+.task>ul>li:last-child .t_title i{
+  background-position:-163px -12px;
+}
+.t_num{
+  float:left;
+  width:7%;
+  color:#B5B5B5;
+}
+.t_money,.t_exp{
+  float:left;
+  width:13%;
+  color:#FEBB3A;
+}
+.task>ul>li span{
+  float:left;
+  width:80px;
+  height:30px;
+  line-height:30px;
+  margin-top:20px;
+  border-radius:4px;
+  background-color:#F8F8F8;
+}
+.t_money i{
+  float:left;
+  width:26px;
+  height:26px;
+  margin:2px 8px 0 8px;
+  background:url(../imgs/index_cardsprite.png) no-repeat -140px -70px;
+}
+.t_exp i{
+  float:left;
+  width:45px;
+  height:25px;
+  margin:2px 8px 0 8px;
+  background:url(../imgs/index_cardsprite.png) no-repeat -165px -70px;
+}
+.t_complete{
+  float:left;
+}
+.t_complete a{
+  padding:15px 50px;
+  background-color:#FFD341;
+  border-radius:5px;
+  text-decoration:none;
+  font-size:18px;
+}
+/*蜂蜜大转盘*/
+.prize{
+  text-align:center;
+  padding:30px 0 50px 0;
+}
+.prize p{
+  margin-bottom:20px;
+}
+.prize a{
+  padding:8px 20px;
+  color:#fff;
+  background-color:#FF9E00;
+  border-radius:4px;
+  font-size:bold;
+}
+.dismiss{
+  display:none;
+}
+.show{
+  display:block;
+}
+/**登录 注册框**/
+.index_header .index_header_r{
+  float:right;
+  margin-right:100px;
+/*  display:none; */
+}
+.index_header .index_header_r>li{
+  padding:14px 3px;
+  line-height:28px;
+}
+.index_header .index_header_r>li>a{
+  float:left;
+  width:30px;
+  height:30px;
+  color:#FF9D00;
+}
+.index_header .index_header_r>li:first-child a{
+  background:url('../imgs/index_icon.png') no-repeat 0 -86px;
+}
+.index_header .index_header_r>li:first-child a:hover{
+  background-position:0 -52px;
+}
+.index_header .index_header_r>li:first-child+li a{
+  background:url('../imgs/index_icon.png') no-repeat -36px -86px;
+}
+.index_header .index_header_r>li:first-child+li a:hover{
+  background-position:-35px -52px;
+}
+.index_header .index_header_r>li:first-child+li+li a{
+  background:url('../imgs/index_icon.png') no-repeat -71px -86px;
+}
+.index_header .index_header_r>li:first-child+li+li a:hover{
+  background-position:-72px -52px;
+}
+.index_header .index_header_r>li span{
+  margin-left:6px;
+  color:#aaa;
+}
+/**成功登录后导航右边的样式**/
+.login_in{
+  float:right;
+  margin-right:100px;
+  position:relative;
+  height:59px;
+
+  display:none;
+}
+.login_in>li{
+  float:left;
+  margin-left:25px;
+  height:59px;
+  line-height:59px;
+}
+.login_in li:first-child{
+  margin-left:0;
+}
+.login_in a.card i{ 
+  padding:4px 15px;
+  background-color:#ff9d00;
+  border-radius:4px;
+  color:#fff;
+  margin-left:0;
+  font-style:normal;
+}
+.login_in a.message i{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  vertical-align:-5px;
+  background:url(../imgs/header-sprites3.png) no-repeat -60px -50px;
+}
+.login_in .li_message:after,.login_in .li_message:hover:after,.login_in .li_bee:after,.login_in .li_bee:hover:after{
+  content:'';
+  display:inline-block;
+  border:4px solid transparent;
+  border-top-color:#333;
+  margin-left:8px;
+}
+.login_in .li_message:hover>a{
+  color:#ff9d00;
+}
+.login_in .li_message:hover i{
+  background-position:-60px -80px;  
+}
+.login_in .li_message:hover:after,.login_in .li_bee:hover:after{
+  border-top-color:#ff9d00;
+}
+.login_in a.bee i{
+  display:inline-block;
+  width:30px;
+  height:30px;
+  vertical-align:-10px;
+  border-radius:100%;
+  border:1px solid transparent;
+  background:url(../imgs/index_user.png) no-repeat -1px -1px;
+}
+.login_in .li_bee:hover>a>i{
+  border:1px solid #ff9d00;
+}
+.login_in ul{
+  position:absolute;
+  left:0;
+  top:59px;
+  z-index:100;
+  background-color:#fff;
+  width:236px;
+  border-top:1px solid #ccc;
+  padding-bottom:10px;
+}
+.login_in ul>li>a{
+  display:block;
+  padding-left:25px;
+  height:35px;
+  line-height:35px;
+  font-size:15px;
+  font-family:'microsoft yahei';
+}
+.login_in ul>li>a:hover{
+  background-color:#eee;
+}
+.login_in ul.message_pop,.login_in ul.bee_pop{
+  display:none;
+}
+.li_message:hover ul{
+  display:block;
+}
+.li_bee:hover ul{
+  display:block;
+}
+.login_in ul.bee_pop li i{
+  padding:0px 14px;
+  vertical-align:-3px;
+  background:url(../imgs/header-sprites3.png) no-repeat -90px -50px;
+}
+.login_in ul.bee_pop li:nth-child(2) i{
+  background-position:-120px -50px;
+} 
+.login_in ul.bee_pop li:nth-child(3) i{
+  background-position:-150px -50px;
+} 
+.login_in ul.bee_pop li:nth-child(4) i{
+  background-position:-180px -50px;
+} 
+.login_in ul.bee_pop li:nth-child(5) i{
+  background-position:-90px -80px;
+} 
+.login_in ul.bee_pop li:nth-child(6) i{
+  background-position:-120px -80px;
+} 
+.login_in ul.bee_pop li:nth-child(7) i{
+  background-position:-150px -80px;
+} 
+.login_in ul.bee_pop li:nth-child(8) i{
+  background-position:-180px -80px;
+}
+.login_in ul.bee_pop li:nth-child(9) i{
+  background-position:-90px -110px;
+}
+.login_in ul.bee_pop li:last-child i{
+  background-position:-120px -110px;
+}
+/****顶部导航样式 end***/
+/*****右侧固定的侧边栏******/
+aside{
+  position:fixed;
+  bottom:40px;
+  right:50px;
+  z-index:999;
+}
+aside li{
+  width:46px;
+  height:46px;
+  position:relative;
+}
+aside a i{
+  position:absolute;
+  width:46px;
+  height:46px;
+  border:1px solid #ccc;
+  background:url(../imgs/index_icon.png) no-repeat -132px 0;
+}
+aside a:hover em{
+  position:absolute;
+  line-height:16px;
+  width:24px;
+  height:32px;
+  padding:8px 12px;
+  background-color:#aaa;
+  color:#fff;
+  box-sizing:content-box;
+}
+aside a.yijian i{
+  background-position:-132px -118px;
+}
+aside a.erwei i{
+  background-position:-132px -59px;
+}
+aside a.erwei:hover i{
+  background-position:-201px -59px;
+}
+aside a.erwei:hover b{
+  width:150px;
+  height:180px;
+  background:url(../imgs/qrcode-weixin.gif);
+  position:absolute;
+  right:56px;
+  bottom:0;
+  border:1px solid #ccc;
+}
+
+/******footer 部分******/
+.index_footer{
+  background-color:#3C3C3C;
+  color:#C2C2C2;
+  margin-top:30px;
+}
+.footer_container a{
+  color:#C2C2C2;
+}
+.footer_container a:hover{
+  color:#fff;
+  text-decoration:none;
+}
+.index_footer:after,.footer_container:after,.footer_container>div:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.footer_container{
+  width:1024px;
+  margin:0 auto;
+  font-family:'microsoft yahei';
+}
+.footer_container .highlight{
+  color:#ff9d00;
+}
+/***二维码所在行 样式***/
+.footer_container .jump{
+  float:left;
+  margin:30px 120px 50px 0;
+}
+.footer_container .erwei{
+  margin-right:0;
+}
+.footer_container .jump>p{
+  font-size:14px;
+}
+.footer_container .jump>ul{
+  margin-top:15px;
+}
+.footer_container .jump>ul>li{
+  line-height:20px;
+}
+.footer_container .jump>ul.double{
+  float:left;
+}
+.footer_container .jump>ul.double+ul{
+  margin-left:70px;
+}
+.footer_container .jump>p.center{
+  text-align:center;
+}
+.footer_container .erwei>p{
+  float:right;
+  margin-left:30px;
+  text-align:center;
+}
+.footer_container .erwei>p img{
+  padding-bottom:15px;
+}
+/**关注我们所在行  样式**/
+.footer_container .focus_us{
+  text-align:center;
+  margin-bottom:55px;
+}
+.footer_container .focus_us>p{
+  font-size:16px;
+  margin-bottom:35px;
+}
+.footer_container .focus_us>a{
+  background:url(../imgs/index_icon.png) no-repeat -94px 0px;
+  padding:15px 15px;
+  margin-right:20px;
+}
+.footer_container .focus_us>a+a{
+  background-position:-48px 0px;
+}
+.footer_container .focus_us>a:last-child{
+  background-position:0px 0px;
+  margin-right:0;
+}
+/***链接所在行  样式**/
+.footer_container .all_link{
+  border-top:1px solid #616161;
+  border-bottom:1px solid #616161;
+  padding:20px 10px;
+  line-height:20px;
+  margin-bottom:20px;
+}
+.footer_container .all_link a{
+  margin-right:10px;
+}
+/**备案所在行  样式**/
+.beian{
+  padding-bottom:30px;
+  line-height:20px;
+}
+.beian>div{
+  float:left;
+}
+.beian .map{
+  margin-left:20px;
+}
+.beian .mark{
+  float:left;
+  width:154px;
+  height:49px;
+  margin:-4px 15px 0 0;
+  background:url(../imgs/index_footer_safy3.png);
+}
+.beian .xin,.beian .web{
+  float:right;
+  width:99px;
+  height:33px;
+  margin-right:10px;
+  background:url(../imgs/index_footer_safy2.png);
+}
+.beian .web{
+  background:url(../imgs/index_footer_safy1.png);
+}
+/**意见反馈 样式**/
+.yijian_pop{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:rgba(0,0,0,.1);
+  font-family:'microsoft yahei';
+  display:none;
+  z-index:999;
+}
+.yj_container{
+  width:480px;
+  margin-left:-240px;
+  margin-top:-170px;
+  background-color:#fff;
+  border-radius:4px;
+  padding:25px 25px 18px 25px;
+  position:absolute;
+  top:50%;
+  left:50%;
+}
+.yj_container h2{
+  font-size:24px;
+}
+.yj_container>p{
+  margin:12px 0;
+  font-size:14px;
+}
+.yj_container form{
+  position:absolute;
+  padding:0 24px 20px;
+  background-color:#fff;
+  top:86px;
+  left:0;
+}
+.yj_container textarea{
+  width:472px;
+  height:160px;
+  resize:none;
+  padding:4px;
+  line-height:20px;
+  font-size:14px;
+}
+.yj_container form p{
+  margin-top:10px;
+}
+.yj_container form p a{
+  display:inline-block;
+  padding:8px 25px;
+  border-radius:4px;
+  background-color:#FCB309;
+  color:#fff;
+  font-size:16px;
+  font-weight:bold;
+  text-decoration:none;
+}
+.yj_container span{
+  margin-left:15px;
+  color:#FF5A5A;
+  font-size:14px;
+  opacity:0;
+}
+/*关闭 的样式*/
+.close{
+  width:40px;
+  height:30px;
+  background-color:#eee;
+  border-radius:50% 0 0 50%;
+  position:absolute;
+  right:0;
+  top:10px;
+  text-decoration:none;   
+}
+.close b{
+  padding:5px;
+  display:inline-block;
+  margin:4px 0 0 3px;
+  border-radius:50%;
+  background-color:#fff;
+  transition:all linear .5s;
+  cursor:pointer;
+}
+.close:hover b{
+  transform:rotate(270deg) scale(1.2);
+}
+/*关闭 的样式*/
+.yijian_pop .success{
+  position:absolute;
+  left:0;
+  top:80px;;
+  width:530px;
+  text-align:center;
+  line-height:140px;
+  background-color:#fff;
+  font-size:20px;
+  color:#ff9d00;
+  display:none;
+}
+/**登录框的样式**/
+.login{
+  position:fixed;
+  right:0;
+  left:0;
+  bottom:0;
+  top:0;
+  background-color:rgba(0,0,0,.2);
+  z-index:9999;
+  color:#999;
+  display:none;
+}
+.login_container{
+  width:370px;
+  background-color:#fff;
+  border-radius:6px;
+  padding-top:5px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-185px;
+  margin-top:-180px;
+  box-shadow:0 0 3px #000;
+}
+.login_container form{
+  text-align:center;
+}
+.login_container form input{
+  width:318px;
+  height:28px;
+  line-height:28px;
+  border-radius:4px;
+  font-size:14px;
+  padding:6px 0 6px 12px;
+  margin-bottom:15px;
+  border:1px solid #d8d8d8;
+}
+.login_container form p{
+  text-align:right;
+  margin-right:20px;
+}
+.login_container form p a{
+  color:#ff9d00;
+}
+.login_container form button{
+  width:330px;
+  text-align:center;
+  padding:10px 0;
+  font-size:18px;
+  font-weight:bold;
+  color:#fff;
+  background-color:#FFA800;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  margin-top:10px;
+}
+.login_container form button:hover{
+  background-color:#FFC750; 
+}
+.cooperation{
+  margin-top:30px;
+  border-top:1px solid #ccc;
+  padding:20px 20px 0;
+}
+.cooperation ul{
+  height:84px;
+  width:330px;
+}
+.cooperation ul li{
+  float:left;
+  margin-right:40px;
+  width:52px;
+  text-align:center;
+}
+.cooperation ul li:last-child{
+  margin-right:0;
+}
+.cooperation ul li a i{
+  display:inline-block;
+  width:42px;
+  height:42px;
+  margin:10px 5px 3px 5px;
+  background:url(../imgs/index_icon1.png) no-repeat 0 0;
+}
+.cooperation ul li a{
+  text-decoration:none;
+  color:#999;
+}
+.cooperation ul li a:hover{
+  color:#666;
+}
+.cooperation ul li a:hover i{
+  background-position:0 -42px;
+}
+.cooperation ul li a.qq i{
+  background-position:-42px 0;
+}
+.cooperation ul li .qq:hover i{
+  background-position:-42px -42px;
+}
+.cooperation ul li .weixin i{
+  background-position:-294px 0;
+}
+.cooperation ul li .weixin:hover i{
+  background-position:-294px -42px;
+}
+.cooperation ul li .renren i{
+  background-position:-84px 0;
+}
+.cooperation ul li .renren:hover i{
+  background-position:-84px -42px;
+}
+.login .zhuce{
+  width:160px;
+  text-align:center;
+  height:30px;
+  line-height:30px;
+  border-radius:15px;
+  color:#fff;
+  background:rgba(0,0,0,.4);
+  font-weight:bold;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-80px;
+  margin-top:215px;
+}
+.login .zhuce a{
+  color:#ff9d00;
+}
+.login_error{
+  width:232px;
+  margin-left:18px;
+  height:40px;
+  background:url(../imgs/loginBox_btn.gif) no-repeat -175px 0;
+  color:#f00;
+  padding:12px 0 0 35px;
+  opacity:0;
+}

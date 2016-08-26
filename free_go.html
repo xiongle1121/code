@@ -1,0 +1,1936 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>new document</title>
+  <meta charset="utf-8"/>
+  <link rel='icon' href='imgs/mf.icon'>
+  <link rel="stylesheet" href="css/reset-min.css" type='text/css'>
+  <link rel="stylesheet" href="css/common.css" type='text/css'>
+  <link rel="stylesheet" href="css/free_go.css" type='text/css'>
+</head>
+<body>
+   <!--异步加载页面头部-->
+   <header class='index_header'>
+   </header>
+   <!--异步加载页面侧边栏-->
+   <div id='out_main'></div>
+   <section class='free_top'>
+     <div class='lt'>
+	   <div class='hot_city'>
+	     <!--热门出发城市-->
+	     <div class='city_title' id='city_title'>
+	       <i class='i_mark'></i>
+           <h3>长沙<span>站<span></h3>
+	       <i class='i_arrow'></i>
+         </div>
+		 <!--热门出发城市的弹出框-->
+         <div class='hot_pop'>
+		   <p>热门出发城市</p>
+		   <ul class='cities'>
+		     <li class='rank_num'><a href='#'>北京</a></li>
+		     <li class='rank_num'><a href='#'>上海</a></li>
+		     <li class='rank_num'><a href='#'>广州</a></li>
+		     <li><a href='#'>成都</a></li>
+		     <li><a href='#'>长沙</a></li>
+		     <li><a href='#'>杭州</a></li>
+		     <li><a href='#'>昆明</a></li>
+		     <li><a href='#'>南京</a></li>
+		     <li><a href='#'>深圳</a></li>
+		     <li><a href='#'>武汉</a></li>
+		     <li><a href='#'>西安</a></li>
+		     <li><a href='#'>香港</a></li>
+		   </ul>
+		   <input type='text' placeholder='搜索城市(支持汉字、首字母查询)'>
+		   <p class='alphabet' id='alphabet'>
+		     <a href='#A' class='active'>ABCDEF</a>
+		     <a href='#G'>GHJKLM</a>
+		     <a href='#N'>NPQRS</a>
+		     <a href='#T'>TWXYZ</a>
+		   </p>
+		   <ul class='alphabet_city active' id='A'>
+		     <li>
+			   <span>A</span>
+			   <p>
+			     <a href='#'>澳门</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>B</span>
+			   <p>
+			     <a href='#'>北京</a>
+			     <a href='#'>包头</a>
+			     <a href='#'>北海</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>C</span>
+			   <p>
+			     <a href='#'>成都</a>
+			     <a href='#'>长沙</a>
+			     <a href='#'>长春</a>
+			     <a href='#'>重庆</a>
+			     <a href='#'>常州</a>
+			     <a href='#'>长治</a>
+			     <a href='#'>郴州</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>D</span>
+			   <p>
+			     <a href='#'>大连</a>
+			     <a href='#'>东莞</a>
+			     <a href='#'>大理</a>
+			     <a href='#'>东北</a>
+			     <a href='#'>大同</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>F</span>
+			   <p>
+			     <a href='#'>福州</a>
+			     <a href='#'>佛山</a>
+			   </p>
+			 </li>
+		   </ul>
+		   <ul class='alphabet_city' id='G'>
+		     <li>
+			   <span>G</span>
+			   <p>
+			     <a href='#'>广州</a>
+			     <a href='#'>贵阳</a>
+			     <a href='#'>桂林</a>
+			     <a href='#'>赣州</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>H</span>
+			   <p>
+			     <a href='#'>杭州</a>
+			     <a href='#'>哈尔滨</a>
+			     <a href='#'>合肥</a>
+			     <a href='#'>海口</a>
+			     <a href='#'>呼和浩特</a>
+			     <a href='#'>邯郸</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>J</span>
+			   <p>
+			     <a href='#'>济南</a>
+			     <a href='#'>嘉兴</a>
+			     <a href='#'>揭阳</a>
+			     <a href='#'>九寨沟</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>K</span>
+			   <p>
+			     <a href='#'>昆明</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>L</span>
+			   <p>
+			     <a href='#'>兰州</a>
+			     <a href='#'>洛阳</a>
+			     <a href='#'>龙岩</a>
+			     <a href='#'>吕梁</a>
+			     <a href='#'>连云港</a>
+			     <a href='#'>丽江</a>
+			     <a href='#'>拉萨</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>M</span>
+			   <p>
+			     <a href='#'>绵阳</a>
+			   </p>
+			 </li>
+		   </ul>
+		   <ul class='alphabet_city' id='N'>
+		     <li>
+			   <span>N</span>
+			   <p>
+			     <a href='#'>南京</a>
+			     <a href='#'>南宁</a>
+			     <a href='#'>宁波</a>
+			     <a href='#'>南昌</a>
+			     <a href='#'>南平</a>
+			     <a href='#'>宁德</a>
+			     <a href='#'>南沙群岛</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>P</span>
+			   <p>
+			     <a href='#'>莆田</a>
+			     <a href='#'>攀枝花</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>Q</span>
+			   <p>
+			     <a href='#'>青岛</a>
+			     <a href='#'>泉州</a>
+			     <a href='#'>秦皇岛</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>S</span>
+			   <p>
+			     <a href='#'>深圳</a>
+			     <a href='#'>上海</a>
+			     <a href='#'>沈阳</a>
+			     <a href='#'>石家庄</a>
+			     <a href='#'>三亚</a>
+			     <a href='#'>汕头</a>
+			     <a href='#'>苏州</a>
+			   </p>
+			 </li>
+		   </ul>
+		   <ul class='alphabet_city' id='T'>
+		     <li>
+			   <span>T</span>
+			   <p>
+			     <a href='#'>太原</a>
+			     <a href='#'>天津</a>
+			     <a href='#'>唐山</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>W</span>
+			   <p>
+			     <a href='#'>武汉</a>
+			     <a href='#'>温州</a>
+			     <a href='#'>乌鲁木齐</a>
+			     <a href='#'>无锡</a>
+			     <a href='#'>威海</a>
+			     <a href='#'>潍坊</a>
+			     <a href='#'>乌镇</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>X</span>
+			   <p>
+			     <a href='#'>西安</a>
+			     <a href='#'>香港</a>
+			     <a href='#'>厦门</a>
+			     <a href='#'>徐州</a>
+			     <a href='#'>西宁</a>
+			     <a href='#'>西昌</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>Y</span>
+			   <p>
+			     <a href='#'>烟台</a>
+			     <a href='#'>宜昌</a>
+			     <a href='#'>银川</a>
+			     <a href='#'>运城</a>
+			     <a href='#'>延安</a>
+			     <a href='#'>延吉</a>
+			     <a href='#'>扬州</a>
+			   </p>
+			 </li>
+			 <li>
+			   <span>Z</span>
+			   <p>
+			     <a href='#'>郑州</a>
+			     <a href='#'>珠海</a>
+			     <a href='#'>漳州</a>
+			     <a href='#'>中山</a>
+			     <a href='#'>舟山</a>
+			     <a href='#'>湛江</a>
+			   </p>
+			 </li>
+		   </ul>
+		 </div>
+	   </div>
+	   <!--左侧的导航-->
+	   <ul class='details_area' id='details_area'>
+	     <li data-show='#nation'>
+		   <i class='country_icon'></i>
+		   <div class='country_center'>
+		     <h4>国内旅游</h4>
+		     <p>
+		       <a href='#'>三亚</a>
+		       <a href='#'>厦门</a>
+		       <a href='#'>丽江</a>
+		       <a href='#'>成都</a>
+		       <a href='#'>西安</a>
+		     </p>
+           </div>
+		   <i class='country_arrow'></i>
+		 </li>
+		 <li data-show='#JK'>
+		   <i class='country_icon'></i>
+		   <div class='country_center'>
+		     <h4>日本 韩国</h4>
+		     <p>
+		       <a href='#'>东京</a>
+		       <a href='#'>大阪</a>
+		       <a href='#'>首尔</a>
+		       <a href='#'>冲绳</a>
+		       <a href='#'>济州岛</a>
+		     </p>
+           </div>
+		   <i class='country_arrow'></i>
+		 </li>
+		 <li data-show='#eastsouth'>
+		   <i class='country_icon'></i>
+		   <div class='country_center'>
+		     <h4>东南亚 南亚 泰国</h4>
+		     <p>
+		       <a href='#'>普吉岛</a>
+		       <a href='#'>马尔代夫</a>
+		       <a href='#'>清迈</a>
+		       <a href='#'>巴厘岛</a>
+		     </p>
+           </div>
+		   <i class='country_arrow'></i>
+		 </li>
+		 <li data-show='#hongkong'>
+		   <i class='country_icon'></i>
+		   <div class='country_center'>
+		     <h4>香港 澳门 台湾</h4>
+		     <p>
+		       <a href='#'>台北</a>
+		       <a href='#'>香港</a>
+		       <a href='#'>迪士尼乐园</a>
+		     </p>
+           </div>
+		   <i class='country_arrow'></i>
+		 </li>
+		 <li data-show='#eupean'>
+		   <i class='country_icon'></i>
+		   <div class='country_center'>
+		     <h4>欧洲 中东</h4>
+		     <p>
+		       <a href='#'>英国</a>
+		       <a href='#'>德国</a>
+		       <a href='#'>法国</a>
+		       <a href='#'>迪拜</a>
+		     </p>
+           </div>
+		   <i class='country_arrow'></i>
+		 </li>
+		 <li data-show='#american'>
+		   <i class='country_icon'></i>
+		   <div class='country_center'>
+		     <h4>美洲</h4>
+		     <p>
+		       <a href='#'>美国</a>
+		       <a href='#'>塞班岛</a>
+		       <a href='#'>关岛</a>
+		       <a href='#'>加拿大</a>
+		     </p>
+           </div>
+		   <i class='country_arrow'></i>
+		 </li>
+		 <li data-show='#astrilia'>
+		   <i class='country_icon'></i>
+		   <div class='country_center'>
+		     <h4>澳洲 非洲</h4>
+		     <p>
+		       <a href='#'>帕劳</a>
+		       <a href='#'>毛里求斯</a>
+		       <a href='#'>澳大利亚</a>
+		     </p>
+           </div>
+		   <i class='country_arrow'></i>
+		 </li>
+       </ul>
+	   <div class='nav-pop'>
+	     <!--国内旅游-->
+	     <div class='national' id='nation'>
+			 <ul class='col-left'>
+			   <li>
+				 <a href='#'><strong>热门</strong></a>
+				 <p>
+				   <a href='#'>北京</a>
+				   <a href='#'>上海</a>
+				   <a href='#'>三亚</a>
+				   <a href='#'>丽江</a>
+				   <a href='#'>桂林</a>
+				   <a href='#'>厦门</a>
+				   <a href='#'>成都</a>
+				   <a href='#'>重庆</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>四川</strong></a>
+				 <p>
+				   <a href='#'>成都</a>
+				   <a href='#'>九寨沟</a>
+				   <a href='#'>西岭雪山</a>
+				   <a href='#'>峨眉山</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>云南</strong></a>
+				 <p>
+				   <a href='#'>大理</a>
+				   <a href='#'>丽江</a>
+				   <a href='#'>昆明</a>
+				   <a href='#'>西双版纳</a>
+				   <a href='#'>香格里拉</a>
+				   <a href='#'>束河</a>
+				   <a href='#'>泸沽湖</a>
+				   <a href='#'>腾冲</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>浙江</strong></a>
+				 <p>
+				   <a href='#'>杭州</a>
+				   <a href='#'>西塘</a>
+				   <a href='#'>绍兴</a>
+				   <a href='#'>宁波</a>
+				   <a href='#'>乌镇</a>
+				   <a href='#'>舟山</a>
+				   <a href='#'>南浔</a>
+				   <a href='#'>千岛湖</a>
+				   <a href='#'>丽水</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>江苏</strong></a>
+				 <p>
+				   <a href='#'>南京</a>
+				   <a href='#'>上海</a>
+				   <a href='#'>三亚</a>
+				   <a href='#'>丽江</a>
+				   <a href='#'>桂林</a>
+				   <a href='#'>厦门</a>
+				   <a href='#'>中华恐龙园</a>
+				   <a href='#'>连云港</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>广东</strong></a>
+				 <p>
+				   <a href='#'>南京</a>
+				   <a href='#'>上海</a>
+				   <a href='#'>三亚</a>
+				   <a href='#'>开平碉楼</a>
+				   <a href='#'>佛山</a>
+				   <a href='#'>珠海</a>
+				   <a href='#'>中华恐龙园</a>
+				   <a href='#'>连云港</a>
+				   <a href='#'>东部华侨城</a>
+				   <a href='#'>长龙主题乐园</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>广西</strong></a>
+				 <p>
+				   <a href='#'>桂林</a>
+				   <a href='#'>阳朔</a>
+				   <a href='#'>北海</a>
+				   <a href='#'>龙脊梯田</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>西北</strong></a>
+				 <p>
+				   <a href='#'>青海湖</a>
+				   <a href='#'>西安</a>
+				   <a href='#'>乌鲁木齐</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>山西</strong></a>
+				 <p>
+				   <a href='#'>平遥</a>
+				   <a href='#'>太原</a>
+				   <a href='#'>大同</a>
+				   <a href='#'>五台山</a>
+				   <a href='#'>壶口瀑布</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>内蒙古</strong></a>
+				 <p>
+				   <a href='#'>呼伦贝尔</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>山东</strong></a>
+				 <p>
+				   <a href='#'>青岛</a>
+				   <a href='#'>济南</a>
+				   <a href='#'>烟台</a>
+				   <a href='#'>威海</a>
+				   <a href='#'>泰山</a>
+				   <a href='#'>日照</a>
+				 </p>
+			   </li>
+			 </ul>
+			 <ul class='col-right'>
+			   <li>
+				 <a href='#'><strong>河北</strong></a>
+				 <p>
+				   <a href='#'>南京</a>
+				   <a href='#'>上海</a>
+				   <a href='#'>三亚</a>
+				   <a href='#'>丽江</a>
+				   <a href='#'>桂林</a>
+				   <a href='#'>厦门</a>
+				   <a href='#'>中华恐龙园</a>
+				   <a href='#'>连云港</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>河南</strong></a>
+				 <p>
+				   <a href='#'>南京</a>
+				   <a href='#'>上海</a>
+				   <a href='#'>三亚</a>
+				   <a href='#'>丽江</a>
+				   <a href='#'>桂林</a>
+				   <a href='#'>云台山</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>福建</strong></a>
+				 <p>
+				   <a href='#'>厦门</a>
+				   <a href='#'>福州</a>
+				   <a href='#'>武夷山</a>
+				   <a href='#'>丽江</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>海南</strong></a>
+				 <p>
+				   <a href='#'>海口</a>
+				   <a href='#'>亚龙湾</a>
+				   <a href='#'>三亚</a>
+				   <a href='#'>天涯海角</a>
+				   <a href='#'>蜈支洲岛</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>湖北/湖南</strong></a>
+				 <p>
+				   <a href='#'>南京</a>
+				   <a href='#'>上海</a>
+				   <a href='#'>三亚</a>
+				   <a href='#'>丽江</a>
+				   <a href='#'>桂林</a>
+				   <a href='#'>厦门</a>
+				   <a href='#'>长沙</a>
+				   <a href='#'>张家界</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>安徽/江西</strong></a>
+				 <p>
+				   <a href='#'>合肥</a>
+				   <a href='#'>黄山</a>
+				   <a href='#'>九华山</a>
+				   <a href='#'>婺源</a>
+				   <a href='#'>南昌</a>
+				   <a href='#'>九江</a>
+				   <a href='#'>庐山</a>
+				   <a href='#'>景德镇</a>
+				   <a href='#'>三清山</a>
+				   <a href='#'>井冈山</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>黑/吉/辽</strong></a>
+				 <p>
+				   <a href='#'>哈尔滨</a>
+				   <a href='#'>长白山</a>
+				   <a href='#'>长春</a>
+				   <a href='#'>大连</a>
+				 </p>
+			   </li>
+			   <li>
+				 <a href='#'><strong>西藏/贵州</strong></a>
+				 <p>
+				   <a href='#'>拉萨</a>
+				   <a href='#'>贵阳</a>
+				 </p>
+			   </li>
+			 </ul>
+		 </div>
+		 <!--日本韩国-->
+		 <div class='country_common' id='JK'>
+		   <div class='col-left'>
+		     <div>
+			     <h5>日本</h5>
+				 <p>
+				   <a href='#'>日本</a>
+				   <a href='#'>东京</a>
+				   <a href='#'>大阪</a>
+				   <a href='#'>京都</a>
+				   <a href='#'>奈良</a>
+				   <a href='#'>冲绳</a>
+				   <a href='#'>北海道</a>
+				   <a href='#'>函馆</a>
+				   <a href='#'>静冈</a>
+				   <a href='#'>名古屋</a>
+				   <a href='#'>福冈</a>
+				   <a href='#'>长崎</a>
+				   <a href='#'>鹿儿岛</a>
+				   <a href='#'>善川</a>
+				   <a href='#'>高松</a>
+				 </p>
+			 </div>
+			 <div>
+				 <h5>韩国</h5>
+				 <p>
+				   <a href='#'>韩国</a>
+				   <a href='#'>首尔</a>
+				   <a href='#'>釜山</a>
+				   <a href='#'>济州岛</a>
+				 </p>
+			 </div>
+		   </div>
+		   <div class='col-right'>
+		     <h3>精彩专题</h3>
+			 <ul>
+			   <li>
+			     <h5><a href='#'>全民撒欢 二三线城市出发产品集锦</a></h5>
+				 <p>出门就是海，抬脚就赏花！</p>
+			   </li>
+			   <li>
+			     <h5><a href='#'>海岛打卡</a></h5>
+				 <p>这个夏天，寻遍最美岛屿...</p>
+			   </li>
+			   <li>
+			     <h5><a href='#'>3分钟读懂首尔深度游必体验</a></h5>
+				 <p>含韩服摄影，汗蒸幕，美发攻略及店铺推荐</p>
+			   </li>
+			   <li>
+			     <a href='#'><img src='imgs/free_go/nav_pop5.jpg'></a>
+			   </li>
+			 </ul>
+		   </div>
+		 </div>
+         <!--东南亚 南亚-->
+		 <div class='eastsouth' id='eastsouth'>
+		   <div>
+			 <h5>东南亚 南亚</h5>
+			 <p>
+			   <a href='#'>越南</a>
+			   <a href='#'>新加坡</a>
+			   <a href='#'>菲律宾</a>
+			   <a href='#'>柬埔寨</a>
+			   <a href='#'>吴哥窟</a>
+			   <a href='#'>马来西亚</a>
+			   <a href='#'>老挝</a>
+			   <a href='#'>缅甸</a>
+			   <a href='#'>越南</a>
+			   <a href='#'>新加坡</a>
+			   <a href='#'>菲律宾</a>
+			   <a href='#'>柬埔寨</a>
+			   <a href='#'>吴哥窟</a>
+			   <a href='#'>马来西亚</a>
+			   <a href='#'>老挝</a>
+			   <a href='#'>缅甸</a>
+			   <a href='#'>越南</a>
+			   <a href='#'>新加坡</a>
+			   <a href='#'>菲律宾</a>
+			   <a href='#'>柬埔寨</a>
+			   <a href='#'>吴哥窟</a>
+			   <a href='#'>马来西亚</a>
+			   <a href='#'>老挝</a>
+			   <a href='#'>缅甸</a>
+			 </p>
+		   </div>
+		   <div>
+			  <h5>泰国</h5>
+			  <p>
+			    <a href='#'>泰国</a>
+			    <a href='#'>清迈</a>
+			    <a href='#'>曼谷</a>
+			    <a href='#'>芭提雅</a>
+			    <a href='#'>普吉岛</a>
+			    <a href='#'>苏梅岛</a>
+			    <a href='#'>甲米</a>
+			    <a href='#'>皮皮岛</a>
+			    <a href='#'>华欣</a>
+			    <a href='#'>象岛</a>
+			    <a href='#'>皇帝岛</a>
+			  </p>  
+		   </div>
+		   <div>
+		      <h5>马尔代夫</h5>
+			  <p>
+			    <a href='#'>天堂岛</a>
+			    <a href='#'>蓝色美人蕉</a>
+			    <a href='#'>满月岛</a>
+			    <a href='#'>太阳岛</a>
+			    <a href='#'>班度士岛</a>
+			    <a href='#'>幸福岛</a>
+			    <a href='#'>双鱼岛</a>
+			    <a href='#'>中央格兰德</a>
+				<a href='#'>莉莉岛</a>
+			    <a href='#'>伊露岛</a>
+			    <a href='#'>曼谷</a>
+			    <a href='#'>芭提雅</a>
+			    <a href='#'>普吉岛</a>
+			    <a href='#'>苏梅岛</a>
+			    <a href='#'>甲米</a>
+			    <a href='#'>皮皮岛</a>
+			    <a href='#'>华欣</a>
+			    <a href='#'>象岛</a>
+			    <a href='#'>皇帝岛</a>
+			    <a href='#'>港丽岛</a>
+			    <a href='#'>神仙珊瑚岛</a>
+			  </p>  
+		   </div>
+           <div>
+		     <a href='#'>
+			   <img src='imgs/free_go/nav_pop4.jpg'>
+			 </a>
+		   </div>
+		 </div>
+		 <!--香港 澳门 台湾-->
+		 <div class='country_common' id='hongkong'>
+		   <div class='col-left'>
+		     <div>
+			     <h5>香港 澳门</h5>
+				 <p>
+				   <a href='#'>香港</a>
+				   <a href='#'>澳门</a>
+				 </p>
+			 </div>
+			 <div>
+				 <h5>台湾</h5>
+				 <p>
+				   <a href='#'>台湾</a>
+				   <a href='#'>台北</a>
+				   <a href='#'>垦丁</a>
+				   <a href='#'>高雄</a>
+				   <a href='#'>花莲</a>
+				   <a href='#'>南投</a>
+				 </p>
+			 </div>
+		   </div>
+		   <div class='col-right'>
+		     <h3>精彩专题</h3>
+			 <ul>
+			   <li>
+			     <h5><a href='#'>海岛打卡</a></h5>
+				 <p>这个夏天，寻遍最美岛屿...</p>
+			   </li>
+			   <li>
+			     <h5><a href='#'>香港自由行全指南</a></h5>
+				 <p>附3，5,6日完美行程推荐</p>
+			   </li>
+			   <li>
+			     <h5><a href='#'>蝶完Yi夏</a></h5>
+				 <p>旅行必备，没有你就囧了！来这里一站搞定！</p>
+			   </li>
+			   <li>
+			     <a href='#'><img src='imgs/free_go/nav_pop3.jpg'></a>
+			   </li>
+			 </ul>
+		   </div>
+		 </div>
+         <!--欧洲 中东-->
+		 <div class='country_common' id='eupean'>
+		   <div class='col-left'>
+		     <div>
+			     <h5>欧洲</h5>
+				 <p>
+				   <a href='#'>澳大利亚</a>
+				   <a href='#'>墨尔本</a>
+				   <a href='#'>悉尼</a>
+				   <a href='#'>悉尼歌剧院</a>
+				   <a href='#'>新西兰</a>
+				   <a href='#'>奥克兰</a>
+				   <a href='#'>皇后镇</a>
+				   <a href='#'>大堡礁</a>
+				   <a href='#'>帕劳</a>
+				   <a href='#'>斐济</a>
+				   <a href='#'>里斯本</a>
+				   <a href='#'>凯恩斯</a>
+				   <a href='#'>大溪地</a>
+				 </p>
+			 </div>
+			 <div>
+				 <h5>中东</h5>
+				 <p>
+				   <a href='#'>毛里求斯</a>
+				   <a href='#'>塞舌尔</a>
+				   <a href='#'>法属留尼汪</a>
+				   <a href='#'>南非</a>
+				   <a href='#'>突尼斯</a>
+				   <a href='#'>摩洛哥</a>
+				 </p>
+			 </div>
+		   </div>
+		   <div class='col-right'>
+		     <h3>精彩专题</h3>
+			 <ul>
+			   <li>
+			     <h5><a href='#'>海岛打卡</a></h5>
+				 <p>这个夏天，寻遍最美岛屿...</p>
+			   </li>
+			   <li>
+			     <h5><a href='#'>大片最爱取景地</a></h5>
+				 <p>直飞现场，发现你不知道的电影拍摄地内幕！</p>
+			   </li>
+			   <li>
+			     <h5><a href='#'>玩遍这些才算来到迪拜</a></h5>
+				 <p>潜水看水母/租车自驾/选酒店全囊括</p>
+			   </li>
+			   <li>
+			     <a href='#'><img src='imgs/free_go/nav_pop1.jpg'></a>
+			   </li>
+			 </ul>
+		   </div>
+		 </div>
+         <!--美洲-->
+		 <div class='country_common' id='american'>
+		   <div class='col-left'>
+		     <div>
+			     <h5>美洲</h5>
+				 <p>
+				   <a href='#'>美国</a>
+				   <a href='#'>加拿大</a>
+				   <a href='#'>悉尼</a>
+				   <a href='#'>悉尼歌剧院</a>
+				   <a href='#'>新西兰</a>
+				   <a href='#'>奥克兰</a>
+				   <a href='#'>皇后镇</a>
+				   <a href='#'>大堡礁</a>
+				   <a href='#'>帕劳</a>
+				   <a href='#'>斐济</a>
+				   <a href='#'>里斯本</a>
+				   <a href='#'>凯恩斯</a>
+				   <a href='#'>大溪地</a>
+				   <a href='#'>毛里求斯</a>
+				 </p>
+			 </div>
+		   </div>
+		   <div class='col-right'>
+		     <h3>精彩专题</h3>
+			 <ul>
+			   <li>
+			     <h5><a href='#'>大片最爱取景地</a></h5>
+				 <p>直飞现场，发现你不知道的电影拍摄地内幕！</p>
+			   </li>
+			   <li>
+			     <h5><a href='#'>海岛打卡</a></h5>
+				 <p>这个夏天，寻遍最美岛屿...</p>
+			   </li>
+			   <li>
+			     <h5><a href='#'>寻喵之旅</a></h5>
+				 <p>潜水看水母/租车自驾/选酒店全囊括</p>
+			   </li>
+			   <li>
+			     <a href='#'><img src='imgs/free_go/nav_pop1.jpg'></a>
+			   </li>
+			 </ul>
+		   </div>
+		 </div>
+         <!--澳洲 非洲-->
+		 <div class='country_common' id='astrilia'>
+		   <div class='col-left'>
+		     <div>
+			     <h5>澳洲</h5>
+				 <p>
+				   <a href='#'>澳大利亚</a>
+				   <a href='#'>墨尔本</a>
+				   <a href='#'>悉尼</a>
+				   <a href='#'>悉尼歌剧院</a>
+				   <a href='#'>新西兰</a>
+				   <a href='#'>奥克兰</a>
+				   <a href='#'>皇后镇</a>
+				   <a href='#'>大堡礁</a>
+				   <a href='#'>帕劳</a>
+				   <a href='#'>斐济</a>
+				   <a href='#'>里斯本</a>
+				   <a href='#'>凯恩斯</a>
+				   <a href='#'>大溪地</a>
+				 </p>
+			 </div>
+			 <div>
+				 <h5>非洲</h5>
+				 <p>
+				   <a href='#'>毛里求斯</a>
+				   <a href='#'>塞舌尔</a>
+				   <a href='#'>法属留尼汪</a>
+				   <a href='#'>南非</a>
+				   <a href='#'>突尼斯</a>
+				   <a href='#'>摩洛哥</a>
+				   <a href='#'>埃及</a>
+				   <a href='#'>马达加斯加</a>
+				   <a href='#'>肯尼亚</a>
+				 </p>
+			 </div>
+		   </div>
+		   <div class='col-right'>
+		     <h3>精彩专题</h3>
+			 <ul>
+			   <li>
+			     <h5><a href='#'>海岛打卡</a></h5>
+				 <p>这个夏天，寻遍最美岛屿...</p>
+			   </li>
+			   <li>
+			     <h5><a href='#'>香港自由行全指南</a></h5>
+				 <p>附3，5,6日完美行程推荐</p>
+			   </li>
+			   <li>
+			     <h5><a href='#'>帕劳怎么玩？看这一篇就够了！</a></h5>
+				 <p>潜水看水母/租车自驾/选酒店全囊括</p>
+			   </li>
+			   <li>
+			     <a href='#'><img src='imgs/free_go/nav_pop1.jpg'></a>
+			   </li>
+			 </ul>
+		   </div>
+		 </div>
+	   </div>
+	 </div>
+	 <!--页面顶部 右侧部分 轮播+搜索-->
+	 <div class='right'>
+	    <!--轮播-->
+		<div class='banner_slider' id='container'>
+		   <ul class='carousel-inner' id='list'>
+			  <li><a href='#'><img src='imgs/free_go/nav_banner1.png'></a></li>
+			  <li><a href='#'><img src='imgs/free_go/nav_banner2.png'></a></li>
+			  <li><a href='#'><img src='imgs/free_go/nav_banner3.png'></a></li>
+		   </ul>
+		   <a href='#' class='arrow left' id='prev'>&lt;</a>
+		   <a href='#' class='arrow right' id='next'>&gt;</a>
+		   <ul class='slider_title' id='buttons'>
+			 <li class='active'><a href="0">端午境内必玩推荐</a></li>
+			 <li><a href="1">开启豪华邮轮之旅</a></li>
+			 <li><a href="2">全国多地飞海岛</a></li>
+		   </ul>
+		</div>
+		<!--搜索框-->
+		<div class='search'>
+		  <p class='lt'>
+		    <a href="#">海岛旅行</a>
+		    <a href="#">必备签证</a>
+		    <a href="#">4折坐邮轮</a>
+		  </p>
+		  <p class='rt'>
+		    <input type="text" placeholder='产品名称/目的地/商铺'><i></i>
+		  </p>
+		</div>
+     </div>
+   </section> 
+   <!--每日特价所在块-->
+   <div class='main_content'>
+     <div class='discount content'>
+       <div class='main_title'>
+	     <strong>每日特价</strong>
+	     <span>特价好货抢不停！</span>
+		 <a href="">换一换</a>
+	   </div>
+	   <ul class='content_list'>
+	     <li>
+		   <div class='discount_icon'><b>3.3</b><i>折</i></div>
+		   <img src="imgs/free_go/sale1.jpg" alt="">
+		   <div class='description'>
+			 <p class='flow'>
+			   【1元自由行】香港/广州/深圳/上海/北京/南宁直飞普吉岛6天4晚高端自助游
+             </p>
+			 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+		   </div>
+		 </li>
+		 <li>
+		   <div class='discount_icon'><b>3</b><i>折</i></div>
+		   <img src="imgs/free_go/sale4.jpg" alt="">
+		   <div class='coat'>
+		     <p><i></i>APP下单</p>
+			 <span>立减<b>300元</b></span>
+		   </div>
+		   <div class='description'>
+			 <p class='flow'>
+			   【暑期钜惠】香港/广州/深圳/上海/北京/南宁直飞普吉岛6天4晚高端自助游
+             </p>
+			 <p><b><em>￥3999</em>起</b><s>￥7999</s></p>
+		   </div>
+		 </li>
+		 <li>
+		   <div class='discount_icon'><b>5.5</b><i>折</i></div>
+		   <img src="imgs/free_go/sale2.jpg" alt="">
+		   <div class='description'>
+			 <p class='flow'>
+			   【暑期假期】成都直飞长滩岛5-6天自由行(赠接送机 多星级酒店可选)
+             </p>
+			 <p><b><em>￥3299</em>起</b><s>￥5999</s></p>
+		   </div>
+		 </li>
+		 <li>
+		   <div class='discount_icon'><b>3.5</b><i>折</i></div>
+		   <img src="imgs/free_go/sale3.jpg" alt="">
+		   <div class='description'>
+			 <p class='flow'>
+			   【暑期特价】北京/上海/广州/深圳/香港/澳门/杭州/南京/济南/西安/成都/重庆直飞韩国首尔4-6天
+             </p>
+			 <p><b><em>￥1999</em>起</b><s>￥5999</s></p>
+		   </div>
+		 </li>
+	   </ul>
+	 </div>
+	 <div class='fly content'>
+       <div class='main_title'>
+	     <strong>超值机票</strong>
+	     <span>精选航线惠飞全球！</span>
+		 <a href="">换一换</a>
+	   </div>
+	   <ul class='content_list'>
+	     <li>
+		   <div class='discount_icon'><b>6.3</b><i>折</i></div>
+		   <img src="imgs/free_go/fly1.jpg" alt="">
+		   <div class='description'>
+			 <p class='flow'>
+			    南京直飞首尔5天往返含税机票
+             </p>
+			 <p><b><em>￥2539</em>起</b><s>￥3999</s></p>
+		   </div>
+		 </li>
+		 <li>
+		   <div class='discount_icon'><b>2.5</b><i>折</i></div>
+		   <img src="imgs/free_go/fly4.jpg" alt="">
+		   <div class='coat'>
+		     <p><i></i>APP下单</p>
+			 <span>立减<b>50元</b></span>
+		   </div>
+		   <div class='description'>
+			 <p class='flow'>
+			    全国（天津/扬州/福州/重庆/武汉/长春/西安/青岛/上海）飞往日本大阪/东京/大阪+东京5-8天往返含税机票（赠送购物优惠券，多套餐可选） 
+             </p>
+			 <p><b><em>￥999</em>起</b><s>￥3999</s></p>
+		   </div>
+		 </li>
+		 <li>
+		   <div class='discount_icon'><b>6</b><i>折</i></div>
+		   <img src="imgs/free_go/fly2.jpg" alt="">
+		   <div class='description'>
+			 <p class='flow'>
+                西安直飞甲米6/7天往返含税机票（含15Kg免费行李托运）             </p>
+			 <p><b><em>￥2999</em>起</b><s>￥3999</s></p>
+		   </div>
+		 </li>
+		 <li>
+		   <div class='discount_icon'><b>5.2</b><i>折</i></div>
+		   <img src="imgs/free_go/fly3.jpg" alt="">
+		   <div class='description'>
+			 <p class='flow'>
+              【端午/暑假】香港直飞首尔5天4晚往返含税机票（赠送15kg行李托运）          </p>
+			 <p><b><em>￥1299</em>起</b><s>￥2480</s></p>
+		   </div>
+		 </li>
+	   </ul>
+	 </div>
+	 <div class='APP content'>
+       <div class='main_title'>
+	     <strong>APP立减</strong>
+	     <span>自由行APP下单更划算！</span>
+		 <a href="">换一换</a>
+	   </div>
+	   <ul class='content_list'>
+	     <li>
+		   <div class='discount_icon'><b>4.4</b><i>折</i></div>
+		   <img src="imgs/free_go/app1.jpg" alt="">
+		   <div class='description'>
+			 <p class='flow'>
+			    【暑期预售】北京/上海/重庆/杭州/香港/成都直飞长滩岛5-8天自由行 （机票+海边酒店+接送机+国际自助早餐）
+             </p>
+			 <p><b><em>￥2999</em>起</b><s>￥6880</s></p>
+		   </div>
+		 </li>
+		 <li>
+		   <div class='discount_icon'><b>3.6</b><i>折</i></div>
+		   <img src="imgs/free_go/app2.jpg" alt="">
+		   <div class='coat'>
+		     <p><i></i>APP下单</p>
+			 <span>立减<b>500元</b></span>
+		   </div>
+		   <div class='description'>
+			 <p class='flow'>
+               【暑期特惠】北京/上海/成都/香港直飞毛里求斯7-8天自由行（赠接送机+电话卡+旅游险+写游记返200现金）            
+			 </p>
+			 <p><b><em>￥7999</em>起</b><s>￥24999</s></p>
+		   </div>
+		 </li>
+		 <li>
+		   <div class='discount_icon'><b>2.3</b><i>折</i></div>
+		   <img src="imgs/free_go/app3.jpg" alt="">
+		   <div class='coat'>
+		     <p><i></i>APP下单</p>
+			 <span>立减<b>100元</b></span>
+		   </div>
+		   <div class='description'>
+			 <p class='flow'>
+              全国多地往返巴厘岛5-7天顶级自由行(巴厘岛一卡通 赠送水晶相册、下午茶SPA)     
+			 </p>
+			 <p><b><em>￥2999</em>起</b><s>￥12999</s></p>
+		   </div>
+		 </li>
+		 <li>
+		   <div class='discount_icon'><b>3.5</b><i>折</i></div>
+		   <img src="imgs/free_go/app4.jpg" alt="">
+		   <div class='coat'>
+		     <p><i></i>APP下单</p>
+			 <span>立减<b>300元</b></span>
+		   </div>
+		   <div class='description'>
+			 <p class='flow'>
+               香港/北京/上海/杭州/帕劳6天5晚/5天4晚自由行（可预定当地出海游一价全包+赠接送机+电话卡+境外保险+酒店用餐） 
+			 </p>
+			 <p><b><em>￥4888</em>起</b><s>￥13800</s></p>
+		   </div>
+		 </li>
+	   </ul>
+	 </div>
+	 <div class='half_free content'>
+       <div class='main_title'>
+	     <strong>半自由行来袭</strong>
+		 <a href="">换一换</a>
+	   </div>
+	   <ul class='content_list'>
+	     <li>
+		   <div class='discount_icon'><b>3.7</b><i>折</i></div>
+		   <img src="imgs/free_go/free1.jpg" alt="">
+		   <div class='coat'>
+		     <p><i></i>APP下单</p>
+			 <span>立减<b>200元</b></span>
+		   </div>
+		   <div class='description'>
+			 <p class='flow'>
+			    【暑期预售】北京/上海/重庆/杭州/香港/成都直飞长滩岛5-8天自由行 （机票+海边酒店+接送机+国际自助早餐）
+             </p>
+			 <p><b><em>￥7399</em>起</b><s>￥19999</s></p>
+		   </div>
+		 </li>
+		 <li>
+		   <div class='discount_icon'><b>5</b><i>折</i></div>
+		   <img src="imgs/free_go/app2.jpg" alt="">
+		   <div class='description'>
+			 <p class='flow'>
+			   【北/上/广/深出发】成都九寨沟7天6晚半自由行（成都预留充足自由活动时间+赠送熊猫乐园+赠送旅行套装）
+			 </p>
+			 <p><b><em>￥2400</em>起</b><s>￥4600</s></p>
+		   </div>
+		 </li>
+		 <li>
+		   <div class='discount_icon'><b>3.9</b><i>折</i></div>
+		   <img src="imgs/free_go/app3.jpg" alt="">
+		   <div class='description'>
+			 <p class='flow'>
+			   成都出发到柬埔寨六日/五日旅游 直飞吴哥窟5晚6天/4晚5天半自由行（特别安排2天自由活动+多种套餐不同酒店任选+赠送旅游意外险）
+			 </p>
+			 <p><b><em>￥2880</em>起</b><s>￥7360</s></p>
+		   </div>
+		 </li>
+		 <li>
+		   <div class='discount_icon'><b>7.8</b><i>折</i></div>
+		   <img src="imgs/free_go/app4.jpg" alt="">
+		   <div class='description'>
+			 <p class='flow'>
+			   成都直飞斯里兰卡5晚7日/6晚8日半自由行，可配全国部分城市联运（多套餐可选）
+			 </p>
+			 <p><b><em>￥6200</em>起</b><s>￥8000</s></p>
+		   </div>
+		 </li>
+	   </ul>
+	 </div>
+   </div>
+   <!--主题推荐所在块-->
+   <div class='bottom_content'>
+     <div class='recommend_theme content'>
+       <div class='main_title details_title'>
+	     <strong>主题推荐</strong>
+         <p class='lt title_toggle'>
+		   <a href="#island" class='active'>海岛特惠</a>
+		   <a href="#flower">踏青赏花</a>
+		   <a href="#holiday">蜜月度假</a>
+		   <a href="#father">亲子同行</a>
+		   <a href="#buy">嗨购必去</a>
+		   <a href="#eat">吃货聚集地</a>
+		 </p>
+		 <a href="#">查看更多</a>
+	   </div>
+	   <div class='lt'>
+	      <img src="imgs/free_go/theme1.jpg" alt="">
+	   </div>
+	   <div class='parent'>
+		   <ul class='content_list pos_list active' id='island'>
+			 <li>
+			   <img src="imgs/free_go/theme3.jpg" alt="">
+			   <div class='coat'>
+				 <p><i></i>APP下单</p>
+				 <span>立减<b>300元</b></span>
+			   </div>
+			   <div class='description'>
+				 <p class='flow'>
+				   【暑期特惠】全国多地出发至马尔代夫唯一岛6-7天自由行（免费升级四水+免费出海浮潜+免费下午茶+独家赠送30分钟摄影行程）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/theme2.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   多地出发马尔代夫奥露岛自由行（一价全包+赠送日落海钓+一次居民岛游+蜜月申请花床果篮蛋糕气泡酒）
+				 </p>
+				 <p><b><em>￥9999</em>起</b><s>￥36000</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/theme4.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   【暑期特惠】北京/上海/成都/香港直飞毛里求斯7-8天自由行（赠接送机+电话卡+旅游险+写游记返200现金）
+				 </p>
+				 <p><b><em>￥7999</em>起</b><s>￥21999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='flower'>
+			 <li>
+			   <img src="imgs/free_go/theme5.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   【暑期特惠】全国多地出发至马尔代夫唯一岛6-7天自由行（免费升级四水+免费出海浮潜+免费下午茶+独家赠送30分钟摄影行程）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/theme6.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   多地出发马尔代夫奥露岛自由行（一价全包+赠送日落海钓+一次居民岛游+蜜月申请花床果篮蛋糕气泡酒）
+				 </p>
+				 <p><b><em>￥9999</em>起</b><s>￥36000</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/theme7.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   【暑期特惠】北京/上海/成都/香港直飞毛里求斯7-8天自由行（赠接送机+电话卡+旅游险+写游记返200现金）
+				 </p>
+				 <p><b><em>￥7999</em>起</b><s>￥21999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='holiday'>
+			 <li>
+			   <img src="imgs/free_go/theme8.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   【暑期特惠】全国多地出发至马尔代夫唯一岛6-7天自由行（免费升级四水+免费出海浮潜+免费下午茶+独家赠送30分钟摄影行程）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/theme9.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   多地出发马尔代夫奥露岛自由行（一价全包+赠送日落海钓+一次居民岛游+蜜月申请花床果篮蛋糕气泡酒）
+				 </p>
+				 <p><b><em>￥9999</em>起</b><s>￥36000</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/theme10.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   【暑期特惠】北京/上海/成都/香港直飞毛里求斯7-8天自由行（赠接送机+电话卡+旅游险+写游记返200现金）
+				 </p>
+				 <p><b><em>￥7999</em>起</b><s>￥21999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='father'>
+			 <li>
+			   <img src="imgs/free_go/theme11.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   【暑期特惠】全国多地出发至马尔代夫唯一岛6-7天自由行（免费升级四水+免费出海浮潜+免费下午茶+独家赠送30分钟摄影行程）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/theme12.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   多地出发马尔代夫奥露岛自由行（一价全包+赠送日落海钓+一次居民岛游+蜜月申请花床果篮蛋糕气泡酒）
+				 </p>
+				 <p><b><em>￥9999</em>起</b><s>￥36000</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/theme13.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   【暑期特惠】北京/上海/成都/香港直飞毛里求斯7-8天自由行（赠接送机+电话卡+旅游险+写游记返200现金）
+				 </p>
+				 <p><b><em>￥7999</em>起</b><s>￥21999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='buy'>
+			 <li>
+			   <img src="imgs/free_go/theme14.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   【暑期特惠】全国多地出发至马尔代夫唯一岛6-7天自由行（免费升级四水+免费出海浮潜+免费下午茶+独家赠送30分钟摄影行程）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/theme15.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   多地出发马尔代夫奥露岛自由行（一价全包+赠送日落海钓+一次居民岛游+蜜月申请花床果篮蛋糕气泡酒）
+				 </p>
+				 <p><b><em>￥9999</em>起</b><s>￥36000</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/theme16.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   【暑期特惠】北京/上海/成都/香港直飞毛里求斯7-8天自由行（赠接送机+电话卡+旅游险+写游记返200现金）
+				 </p>
+				 <p><b><em>￥7999</em>起</b><s>￥21999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='eat'>
+			 <li>
+			   <img src="imgs/free_go/theme17.jpg" alt="">
+			   <div class='coat'>
+				 <p><i></i>APP下单</p>
+				 <span>立减<b>300元</b></span>
+			   </div>
+			   <div class='description'>
+				 <p class='flow'>
+				   【暑期特惠】全国多地出发至马尔代夫唯一岛6-7天自由行（免费升级四水+免费出海浮潜+免费下午茶+独家赠送30分钟摄影行程）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/theme18.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   多地出发马尔代夫奥露岛自由行（一价全包+赠送日落海钓+一次居民岛游+蜜月申请花床果篮蛋糕气泡酒）
+				 </p>
+				 <p><b><em>￥9999</em>起</b><s>￥36000</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/theme19.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   【暑期特惠】北京/上海/成都/香港直飞毛里求斯7-8天自由行（赠接送机+电话卡+旅游险+写游记返200现金）
+				 </p>
+				 <p><b><em>￥7999</em>起</b><s>￥21999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+	   </div>
+	 </div>
+	 <div class='airport content'>
+       <div class='main_title details_title'>
+	     <strong>机酒自由行</strong>
+         <p class='lt title_toggle'>
+		   <a href="#summary" class='active'>端午暑期出发</a>
+		   <a href="#visa">免签出发</a>
+		   <a href="#korea">日韩</a>
+		   <a href="#east">东南亚</a>
+		   <a href="#tai">港澳台</a>
+		 </p>
+		 <a href="#">查看更多</a>
+	   </div>
+	   <div class='lt'>
+	      <img src="imgs/free_go/wine1.jpg" alt="">
+	   </div>
+	   <div class='parent'>
+		   <ul class='content_list pos_list active' id='summary'>
+			 <li>
+			   <img src="imgs/free_go/wine2.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/wine3.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/wine4.jpg" alt="">
+			   <div class='coat'>
+				 <p><i></i>APP下单</p>
+				 <span>立减<b>300元</b></span>
+			   </div>
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='visa'>
+			 <li>
+			   <img src="imgs/free_go/wine5.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/wine6.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/wine7.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='korea'>
+			 <li>
+			   <img src="imgs/free_go/wine8.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/wine9.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/wine10.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='east'>
+			 <li>
+			   <img src="imgs/free_go/wine11.jpg" alt="">
+			   <div class='coat'>
+				 <p><i></i>APP下单</p>
+				 <span>立减<b>300元</b></span>
+			   </div>
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/wine12.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/wine13.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='tai'>
+			 <li>
+			   <img src="imgs/free_go/wine14.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/wine15.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/wine16.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+       </div>
+	 </div>
+	 <div class='needed content'>
+       <div class='main_title details_title'>
+	     <strong>出行必备</strong>
+         <p class='lt title_toggle'>
+		   <a href="#wifi" class='active'>热卖WiFi</a>
+		   <a href="#surf">便捷上网卡</a>
+		   <a href="#pick">接/送机</a>
+		   <a href="#ticket">高铁票</a>
+		   <a href="#transport">交通卡</a>
+		 </p>
+		 <a href="#">查看更多</a>
+	   </div>
+	   <div class='lt'>
+	      <img src="imgs/free_go/need1.jpg" alt="">
+	   </div>
+	   <div class='parent'>
+		   <ul class='content_list pos_list active' id='wifi'>
+			 <li>
+			   <img src="imgs/free_go/need2.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/need3.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/need4.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='surf'>
+			 <li>
+			   <img src="imgs/free_go/need5.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/need6.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/need7.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='pick'>
+			 <li>
+			   <img src="imgs/free_go/need8.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/need9.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/need10.jpg" alt="">
+			   <div class='coat'>
+				 <p><i></i>APP下单</p>
+				 <span>立减<b>300元</b></span>
+			   </div>
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='ticket'>
+			 <li>
+			   <img src="imgs/free_go/need11.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/need12.jpg" alt="">
+			   <div class='coat'>
+				 <p><i></i>APP下单</p>
+				 <span>立减<b>300元</b></span>
+			   </div>
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/need13.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='transport'>
+			 <li>
+			   <img src="imgs/free_go/need14.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/need15.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/need16.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+	   </div>
+	 </div>
+	 <div class='play content'>
+       <div class='main_title details_title'>
+	     <strong>当地玩乐</strong>
+         <p class='lt title_toggle'>
+		   <a href="#hot_sale" class='active'>当季热销</a>
+		   <a href="#place">境内港台</a>
+		   <a href="#japan">血拼日韩</a>
+		   <a href="#south">风情东南亚</a>
+		   <a href="#ocean">热情海岛</a>
+		   <a href="#eup">高端欧美澳</a>
+		 </p>
+		 <a href="#">查看更多</a>
+	   </div>
+	   <div class='lt'>
+	      <img src="imgs/free_go/play1.jpg" alt="">
+	   </div>
+	   <div class='parent'>
+		   <ul class='content_list pos_list active' id='hot_sale'>
+			 <li>
+			   <img src="imgs/free_go/play2.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/play3.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/play4.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='place'>
+			 <li>
+			   <img src="imgs/free_go/play5.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/play6.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/play7.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='japan'>
+			 <li>
+			   <img src="imgs/free_go/play8.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/play9.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/play10.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='south'>
+			 <li>
+			   <img src="imgs/free_go/play11.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/play12.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/play13.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='ocean'>
+			 <li>
+			   <img src="imgs/free_go/play14.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/play15.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/play16.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+		   <ul class='content_list pos_list' id='eup'>
+			 <li>
+			   <img src="imgs/free_go/play17.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国出发三亚5天4晚或6天5晚自由行（往返含税机票+五星级酒店任选+赠送接机+一年有效不约全退）
+				 </p>
+				 <p><b><em>￥12999</em>起</b><s>￥25999</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/play18.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥999</em>起</b><s>￥3600</s></p>
+			   </div>
+			 </li>
+			 <li>
+			   <img src="imgs/free_go/play19.jpg" alt="">
+			   <div class='description'>
+				 <p class='flow'>
+				   全国19地出发直飞台北3-14天自由行（机票+首晚酒店）
+				 </p>
+				 <p><b><em>￥1</em>起</b><s>￥7999</s></p>
+			   </div>
+			 </li>
+		   </ul>
+       </div>
+	 </div>
+   </div>
+   <!--异步加载页面页脚-->
+   <footer class='index_footer'>
+   </footer>
+   <!--右侧的抽屉式导航-->
+   <aside class='drawer'>
+      <div>
+		 <div class='stbar_item stbar-order'>
+		   <a href='#'>
+			 <i class='stbar-icon'></i>
+			 <span class='stbar-text'>我的订单</span>
+		   </a>
+		 </div>
+		 <div class='stbar_item stbar-coupon'>
+		   <a href='#'>
+			 <i class='stbar-icon'></i>
+			 <span class='stbar-text '>我的优惠券</span>
+		   </a>
+		 </div>
+		 <div class='stbar_item stbar-collect'>
+		   <a href='#'>
+			 <i class='stbar-icon'></i>
+			 <span class='stbar-text'>我的收藏</span>
+		   </a>
+		 </div>
+	  </div>
+	  <div class='bottom'>
+	     <div class='stbar_item stbar-weibo'>
+		   <a href='#'>
+			 <i class='stbar-icon'></i>
+			 <span class='stbar-img'>
+			   <span class='stbar-focus'>+ 关注</span>
+			   <br>
+			   <span>马蜂窝良品</span>
+			 </span>
+		   </a>
+		 </div>
+		 <div class='stbar_item stbar-weixin'>
+			 <i class='stbar-icon'></i>
+			 <span class='stbar-img'>
+			   <img src='imgs/free_go/asideweixin.jpg'>
+			 </span>
+		 </div>
+		 <div class='stbar_item stbar-app'>
+			 <i class='stbar-icon'></i>
+			 <span class='stbar-img'>
+			   <img src='imgs/free_go/asidephone.jpg'>
+			 </span>
+		 </div>
+	  </div>
+   </aside>
+
+  <script src='js/jquery-1.11.3.js'></script>  
+  <script src='js/common.js'></script>  
+  <script src='js/free_go.js'></script>
+</body>
+</html>

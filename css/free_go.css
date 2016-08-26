@@ -1,0 +1,769 @@
+/*通用样式*/
+*{
+  font-size:12px;
+}
+a{
+  font-family:'microsoft yahei',Arial;
+}
+.rt{
+  float:right;
+}
+.lt{
+  float:left;
+}
+img{
+  vertical-align:middle;
+}
+.index_header header .index_header_c>li:first-child a{
+  background-color:#fff;
+  color:#666;
+}
+.index_header header .index_header_c>li:nth-child(4)>a{
+  background-color:#FF9D00;
+  color:#fff;
+}
+.index_header header .index_header_c>li:nth-child(4):hover>a{
+  background-color:#FF9D00;
+  color:#fff;
+}
+.index_header header .index_header_c>li:nth-child(4)>a:after{
+  border-top-color:#fff;
+}
+.index_header{
+  border-bottom:2px solid #eee;
+  margin-bottom:15px;
+}
+
+/*页面上部内容样式*/
+/*热门出发城市*/
+.free_top,.main_content,.bottom_content{
+  width:1000px;
+  font-family:'microsoft yahei',Arial;
+  margin:0 auto;
+  color:#666;
+}
+.free_top *,.main_content *,.bottom_content *{
+  box-sizing:border-box;
+}
+.lt a:hover{
+  color:#ff9d00;
+}
+.free_top .lt{
+  width:260px;
+  position:relative;
+}
+.city_title{
+  border:1px solid #ff9d00;
+  height:45px;
+  line-height:45px;
+  padding-left:25px;
+  cursor:pointer;
+}
+.city_title .i_mark{
+  width:15px;
+  height:16px;
+  display:inline-block;
+  background:url(../imgs/free_go/free_icon.png) no-repeat -60px -30px;
+}
+.city_title h3{
+  display:inline-block;
+  font-size:18px;
+  margin-left:10px;
+  font-weight:normal;
+}
+.city_title h3 span{
+  margin-left:5px;
+  font-size:15px;
+}
+.city_title .i_arrow{
+  width:20px;
+  height:14px;
+  float:right;
+  margin:18px 15px 0 0;
+  background:url(../imgs/free_go/free_icon.png) no-repeat -88px 0;  
+}
+.city_title.active{
+  border-bottom:1px solid #fff;
+  position:relative;
+  z-index:10;
+}
+.city_title.active .i_arrow{
+  background-position:-88px -15px;
+}
+/**隐藏的热门出发城市 样式**/
+.hot_pop{
+  width:384px;
+  padding:10px 0;
+  border:1px solid #ff9d00;
+  border-bottom:none;
+  position:absolute;
+  background-color:#fff;
+  left:0px;
+  top:44px;
+  font-size:15px;
+  display:none;
+  z-index:2000;
+}
+.hot_pop a{
+  font-size:15px;
+}
+.hot_pop>p:first-child{
+  color:#999;
+  padding-left:14px;
+  font-size:15px;
+}
+.hot_pop>ul.cities{
+  padding:5px 0 0 15px;
+  border-bottom:1px solid #eee;
+  line-height:25px;
+}
+.hot_pop>ul.cities:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.hot_pop>ul.cities>li{
+  float:left;
+  margin-right:10px;
+}
+.hot_pop>ul.cities .rank_num>a{
+  color:#ff9d00;
+}
+.hot_pop>input{
+  padding:5px 10px;
+  border:1px solid #ccc;
+  width:344px;
+  height:36px;
+  margin:10px 0 15px 15px;
+}
+.hot_pop .alphabet{
+  margin-left:15px;
+}
+.hot_pop .alphabet>a{
+  margin-right:10px;
+  padding:0 5px;
+  text-decoration:none;
+}
+.hot_pop .alphabet>a.active{
+  background-color:#ff9d00;
+  color:#fff;
+}
+.alphabet_city{
+  position:absolute;
+  left:-1px;;
+  top:160px;
+  display:none;
+  border:1px solid #ff9d00;
+  background-color:#fff;
+  border-top:none;
+  width:384px;
+}
+.alphabet_city.active{
+  display:block;
+}
+.alphabet_city>li{
+  height:47px;
+  line-height:47px;
+  padding-left:15px;
+  border-bottom:1px solid #eee;
+  box-sizing:content-box;
+}
+.alphabet_city>li:last-child{
+  border-bottom:none;
+}
+.alphabet_city>li>span{
+  color:#ff9d00;
+  float:left;
+  font-size:15px;
+}
+.alphabet_city>li>p{
+  float:left;
+  margin-left:12px;
+}
+.alphabet_city>li>p a{
+  margin-right:5px;
+}
+/**具体旅游地区的导航**/
+.details_area{
+  position:relative;
+  border:1px solid #eee;
+/*  padding:0 10px;*/
+}
+.details_area>li{
+  height:60px;
+  border:1px solid transparent;
+  border-bottom-color:#eee;
+  padding:8px 10px;
+}
+.details_area>li:last-child{
+  border-bottom:none;
+}
+.details_area>li>i.country_icon{
+  float:left;
+  margin:10px 10px 0 0;
+  width:25px;
+  height:25px;
+  background:url(../imgs/free_go/free_icon.png) no-repeat 0 0;
+}
+.details_area>li>i.country_arrow{
+  float:right;
+  margin-top:16px;
+  width:12px;
+  height:16px;
+  background:url(../imgs/free_go/free_icon.png) no-repeat -29px 0;
+}
+.details_area>li>.country_center{
+  display:inline-block;
+}
+.details_area>li>.country_center h4{
+  margin:5px 0;
+  font-size:15px;
+  font-weight:normal;
+}
+.details_area>li>.country_center p a{
+  margin-right:5px;
+}
+.details_area>li:nth-child(2)>i.country_icon{
+  background-position:0 -29px;
+}
+.details_area>li:nth-child(3)>i.country_icon{
+  background-position:0 -59px;
+}
+.details_area>li:nth-child(4)>i.country_icon{
+  background-position:0 -89px;
+}
+.details_area>li:nth-child(5)>i.country_icon{
+  background-position:0 -119px;
+}
+.details_area>li:nth-child(6)>i.country_icon{
+  background-position:0 -149px;
+}
+.details_area>li:last-child>i.country_icon{
+  background-position:0 -179px;
+}
+.details_area>li.active{
+  border:1px solid #ff9d00;
+  border-right-color:#fff;
+  position:relative;
+  z-index:1999;
+}
+.details_area>li:first-child.active{
+  border-top-color:transparent;
+}
+.details_area>li.active i.country_arrow{
+  background-position:-40px 0;
+}
+/**左侧导航的弹出框**/
+.nav-pop{
+  position:absolute;
+  left:258px;
+  top:44px;
+  z-index:1000;
+}
+/**国内旅游**/
+.national,.country_common,.eastsouth{
+  position:absolute;
+  left:0;
+  top:0;
+  width:740px;
+  min-height:422px;
+  border:1px solid #ff9d00;
+  background-color:#fff;
+  padding:20px 0;
+  display:none;
+}
+/*.country_common{
+  display:block;
+}*/
+.show{
+  display:block;
+}
+.national .col-left{
+  float:left;
+  width:50%;
+}
+.national li{
+  padding-right:20px;
+  margin:10px 0;
+}
+.national li>a,.national li>a strong{
+  float:left;
+  width:65px;
+  line-height:20px;
+  text-align:right;
+  font-size:14px;
+}
+.national li p{
+  margin-left:75px;
+  line-height:20px;
+  word-wrap:break-word;
+}
+.national li p a{
+  padding:0 6px;
+  white-space:nowrap;
+  border-right:1px solid #eee;
+}
+.national .col-right{
+  margin-left:50%;
+}
+.eastsouth>div:not(:last-child){
+  float:left;
+  width:30%;
+  padding:0 25px;
+  margin-right:20px;
+}
+.eastsouth>div:last-child{
+  text-align:center;
+  position:relative;
+  top:20px;
+}
+/**日本 韩国**/
+.country_common{
+  padding:20px;
+}
+.country_common .col-left{
+  float:left;
+  width:50%;
+}
+.country_common .col-left>div{
+  margin-bottom:25px;
+}
+.country_common .col-left h5,.eastsouth h5{
+  padding-bottom:10px;
+  border-bottom:1px solid #ccc;
+  margin-bottom:10px;
+  font-size:15px;
+}
+.country_common .col-left p,.eastsouth p{
+  line-height:20px;
+}
+.country_common .col-left p a,.eastsouth p a{
+  padding:0 6px;
+  border-right:1px solid #eee;
+  white-space:nowrap;
+}
+.country_common .col-right{
+  margin-left:60%;
+}
+.country_common .col-right h3{
+  margin-bottom:20px;
+  font-size:16px;
+}
+.country_common .col-right ul li{
+  margin-bottom:25px;
+}
+.country_common .col-right li a{
+  font-weight:bold;
+  font-size:14px;
+}
+.country_common .col-right li p{
+  margin-top:5px;
+}
+/**轮播 效果**/
+.free_top .right{
+  margin-left:270px;  
+}
+.banner_slider{
+  position:relative;
+  width:730px;
+  height:405px;
+  overflow:hidden;
+}
+.carousel-inner{
+  width:2190px;
+  position:relative;
+  left:0;
+}
+.carousel-inner>li{
+  float:left;
+}
+.arrow{
+  position:absolute;
+  left:5%;
+  top:48%;
+  width:35px;
+  text-align:center;
+  height:40px;
+  line-height:35px;
+  background-color:rgba(0,0,0,.3);
+  font-size:28px;
+  color:#fff;
+  font-weight:bold;
+}
+.arrow:hover{
+  text-decoration:none;
+  background-color:rgba(0,0,0,.7);
+}
+.arrow.right{
+  left:53%;
+}
+.slider_title{
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  margin-left:-192px;
+}
+.slider_title>li{
+  float:left;
+  margin-right:6px;
+}
+.slider_title>li a{
+  padding:8px 15px;
+  background-color:rgba(255,255,255,.7);
+  text-decoration:none;
+}
+.slider_title>li.active a{
+  background-color:rgba(0,0,0,.7);
+  color:#fff;
+}
+.search{
+  height:60px;
+  line-height:60px;
+  background-color:#eee;
+}
+.search p.lt a{
+  color:#333;
+  padding:0 15px;
+}
+.search p.rt input{
+  border:1px solid #ff9d00;
+  outline:none;
+  width:250px;
+  height:32px;
+  line-height:32px;
+  padding-left:8px;
+  font-size:14px;
+}
+.search p.rt i{
+  display:inline-block;
+  width:31px;
+  height:32px;
+  vertical-align:-11px;
+  margin-right:15px;
+  background:#ff9d00 url(../imgs/free_go/free_icon.png) no-repeat -26px -26px;
+}
+.search p.rt i:hover{
+  cursor:pointer;
+  background-color:#ff8a00;
+}
+/**每日特价 样式**/
+.content img{
+  width:238px;
+}
+.main_title:after,.content:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.content{
+  margin-bottom:60px;
+}
+.main_title{
+  margin:40px 0 10px;
+  padding-bottom:10px;
+  border-bottom:1px solid #eee;
+}
+.main_title>strong{
+  font-size:30px;
+  font-weight:normal;
+}
+.main_title>span{
+  font-size:14px;
+  color:#aaa;
+  margin-left:10px;
+}
+.main_title>a{
+  float:right;
+  margin:18px 15px 0 0;
+}
+.content_list>li{
+  float:left;
+  margin-left:16px;
+  position:relative;
+  height:234px;
+  width:238px;
+}
+.content_list>li:first-child{
+  margin-left:0;
+}
+.description{
+  width:100%;
+  font-weight:bold;
+  border:1px solid #eee;
+  padding:10px 10px 15px 10px;
+  background-color:#fff;
+  border-top:none;
+  height:100px;
+  position:absolute;
+  left:0;
+  bottom:0;
+  transition:height 0.2s ease-in-out 0.1s;
+}
+.description p.flow{
+  height:40px;
+  line-height:21px;
+  overflow:hidden;
+  margin-bottom:18px;
+  font-size:14px;
+  transition:height 0.2s ease-in-out 0.1s;
+}
+.content_list>li>a{
+  display:block;
+  width:238px;
+  height:234px;
+  position:absolute;
+}
+.content_list>li:hover p.flow{
+  height:80px;
+  cursor:pointer;
+}
+.content_list>li:hover .description{
+  height:140px;
+  bottom:0;
+}
+.description>p b,em{
+  color:#ff9d00;
+}
+.description>p em{
+  font-size:16px;
+  padding-right:5px;
+}
+.description>p s{
+  margin-left:10px;
+  color:#999;
+}
+/**打折信息的样式 通用**/
+.discount_icon{
+  position:absolute;
+  left:-5px;
+  top:0;
+  padding:0 10px;
+  height:20px;
+  line-height:20px;
+  background-color:#FF6155;
+}
+.discount_icon:after{
+  content:'';
+  display:block;
+  border:3px solid transparent;
+  border-right-color:#7e1811;
+  border-top-color:#7e1811;
+  position:absolute;
+  left:0;
+  bottom:-6px;
+}
+.discount_icon b,i{
+  color:#fff;
+  font-size:14px;
+}
+.discount_icon i{
+  color:#fff;
+}
+.discount .main_title strong{
+  color:#FB6720;
+}
+.fly .main_title strong{
+  color:#7FC59E;
+}
+.APP .main_title strong{
+  color:#FF9D00;
+}
+.half_free .main_title strong{
+  color:#FA5F6F;
+}
+/**图片上的遮罩层 通用样式**/
+.coat{
+  position:absolute;
+  left:0;
+  top:12%;
+  width:100%;
+  text-align:center;
+}
+.coat>span{
+  border-top:1px solid #fff;
+  padding:0 20px;
+}
+.coat>p,.coat>span,.coat>span b{
+  color:#fff;
+  font-size:18px;
+}
+.coat>p>i{
+  display:inline-block;
+  width:32px;
+  height:39px;
+  vertical-align:-13px;
+  background:url(../imgs/free_go/app_phone.png) no-repeat 
+}
+/**主题推荐 样式**/
+.recommend_theme .main_title strong{
+  color:#45BD9E;
+}
+.recommend_theme .main_title p a.active{
+  background-color:#45BD9E;
+}
+.airport .main_title strong{
+  color:#FFB80E;
+}
+.airport .main_title p a.active{
+  background-color:#FFB80E;
+}
+.needed .main_title strong{
+  color:#786EE6;
+}
+.needed .main_title p a.active{
+  background-color:#786EE6;
+}
+.play .main_title strong{
+  color:#985EB4;
+}
+.play .main_title p a.active{
+  background-color:#985EB4;
+}
+.details_title>strong{
+  float:left;
+  font-weight:normal;
+}
+.details_title>p{
+  margin:10px 0 0 100px;
+}
+.details_title>p>a{
+  font-size:16px;
+  padding:5px 8px;
+  margin-right:15px;
+  text-decoration:none;
+}
+.details_title>p a.active{
+  color:#fff;
+}
+.details_title>a{
+  color:#ff9d00;
+  margin-top:14px;
+}
+.bottom_content div.lt>img{
+  width:154px;
+}
+.bottom_content ul.content_list>li{
+  width:266px;
+  margin-left:16px;
+  height:241px;
+}
+.bottom_content ul.content_list img{
+  width:266px;
+}
+.parent{
+  position:relative;
+  margin-left:154px;
+}
+.parent .pos_list{
+  position:absolute;
+  display:none;
+}
+.parent .pos_list.active{
+  display:block;
+}
+/**右侧的抽屉式导航**/
+.drawer{
+  position:fixed;
+  right:0;
+  top:30%;
+}
+.drawer .stbar_item{
+  position:relative;
+  height:35px;
+  margin-bottom:1px;
+}
+.stbar_item>a{
+  display:block;
+  height:35px;
+  width:35px;
+  position:relative;
+}
+.stbar_item:hover .stbar-icon{
+  background-color:#ff9d00;
+}
+.stbar-icon{
+  display:block;
+  width:35px;
+  height:35px;
+  position:relative;
+  border:none;
+  z-index:2;
+  background:#777981 url(../imgs/free_go/aside_icon.png) no-repeat;
+}
+.stbar-coupon .stbar-icon{
+  background-position:0 -70px;
+}
+.stbar-order .stbar-icon{
+  background-position:0 -35px;
+}
+.stbar-coupon .stbar-text{
+  width:90px;
+  transition:left .2s ease-in-out .1s;
+}
+.stbar-coupon:hover .stbar-text{
+  left:-85px;
+}
+.stbar-text{
+  position:absolute;
+  left:0;
+  top:0;
+  height:35px;
+  line-height:35px;
+  width:78px;
+  padding:0 10px;
+  background-color:#ff9d00;
+  color:#fff;
+  box-sizing:border-box;
+  transition:left .2s ease-in-out .1s;
+}
+.stbar_item:hover .stbar-text{
+  left:-75px;
+}
+/**aside 靠下的侧边栏**/
+.drawer .bottom{
+  margin-top:15px;
+}
+.stbar-weibo .stbar-icon{
+  background-position:0 -105px;
+}
+.stbar-weixin .stbar-icon{
+  background-position:0 -140px;
+}
+.stbar-app .stbar-icon{
+  background-position:0 -175px;
+}
+.stbar-img{
+  position:absolute;
+  left:-108px;
+  top:0;
+  display:inline-block;
+  width:104px;
+  height:104px;
+  border:2px solid #ff9d00;
+  text-align:center;
+  background-color:#fff;
+}
+.stbar-weixin .stbar-img{
+  top:-36px;
+}
+.stbar-app .stbar-img{
+  top:-72px;
+}
+.stbar_item:hover .stbar-img{
+  opacity:1;
+  visibility:visible;
+  transition:opacity .3s ease-in-out .1s;
+}
+.stbar-weixin .stbar-img,.stbar-app .stbar-img,.stbar-weibo .stbar-img{
+  opacity:0;
+  visibility:hidden;
+}
+.stbar-focus{
+  display:inline-block;
+  margin:25px 0 7px;
+  line-height:30px;
+  padding:0 10px;
+  background-color:#fd6b24;
+  color:#fff;
+  font-size:14px;
+}
